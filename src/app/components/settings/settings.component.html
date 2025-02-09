@@ -1,0 +1,99 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="section-header">
+      Alchemist's Settings
+    </div>
+    <div>
+        <span class="setting-label">Alchemy Skill Level</span>
+        <mat-slider class="my-slider" min="0" max="100" step="1" showTickMarks >
+            <input matSliderThumb [(ngModel)]="potionService.alchemySettings.alchemySkillLevel">
+          </mat-slider>
+        {{potionService.alchemySettings.alchemySkillLevel}}
+    </div>
+    <div>
+        <span class="setting-label">Alchemist Perk Rank</span>
+        <mat-slider class="my-slider" min="0" max="5" step="1" showTickMarks >
+            <input matSliderThumb [(ngModel)]="potionService.alchemySettings.alchemistPerkRank">
+          </mat-slider>
+        {{potionService.alchemySettings.alchemistPerkRank}}
+    </div>
+    <div>
+      <span class="setting-label">Fortify Alchemy Level</span>
+      <mat-slider class="my-slider" min="0" max="100" step="1" showTickMarks >
+          <input matSliderThumb [(ngModel)]="potionService.alchemySettings.fortifyAlchemyPercent">
+        </mat-slider>
+      {{potionService.alchemySettings.fortifyAlchemyPercent}}
+    </div>
+    <div>
+        <span class="setting-label">Physician Perk</span>
+        <mat-checkbox [(ngModel)]="potionService.alchemySettings.hasPhysicianPerk">
+        </mat-checkbox>
+    </div>
+    <div>
+      <span class="setting-label">Benefactor Perk</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.hasBenefactorPerk">
+      </mat-checkbox>
+    </div>
+    <div>
+      <span class="setting-label">Poisoner Perk</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.hasPoisonerPerk">
+      </mat-checkbox>
+    </div>
+    <div>
+      <span class="setting-label">Purity Perk</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.hasPurityPerk">
+      </mat-checkbox>
+    </div>
+    <div>
+      <span class="setting-label">Seeker of Shawdows</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.hasSeekerOfShadows">
+      </mat-checkbox>
+    </div>
+  </div>
+ 
+  <div class="col-md-6">
+    <div class="section-header header-might-collapse">
+      DLC's to Include
+    </div>
+    <div>
+      <span class="setting-label">Vanilla</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.useVanilla">
+      </mat-checkbox>
+    </div>
+    <div>
+      <span class="setting-label">Dawnguard</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.useDawnguard">
+      </mat-checkbox>
+    </div>
+    <div>
+      <span class="setting-label">Dragonborn</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.useDragonborn">
+      </mat-checkbox>
+    </div>
+    <div>
+      <span class="setting-label">Fishing</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.useFishing">
+      </mat-checkbox>
+    </div>
+    <div>
+      <span class="setting-label">Quest</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.useQuest" >
+      </mat-checkbox>
+    </div>
+    <div>
+      <span class="setting-label">Saints and Seducers</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.useSaintsAndSeducers">
+      </mat-checkbox>
+    </div>
+    <div>
+      <span class="setting-label">Rare Curios</span>
+      <mat-checkbox [(ngModel)]="potionService.alchemySettings.useRareCurios">
+      </mat-checkbox>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 text-center" style="margin-top:10px;">
+    <button mat-flat-button (click)="mixPotions()">Remix Potions</button>
+  </div>
+</div>

@@ -1,1 +1,148 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+$panelBackground: #f2e9d6;
+$panelFontColor: #33220d;
+$accordianBackground: #33220d;
+$accordianFontColor: #f2e9d6;
+$accordianInactiveBackground: #d4d4d4;
+$accordianInactiveFontColor: #040404;
+
+// Style the accordian
+.accordion-button:not(.collapsed) {
+    color: $accordianFontColor !important;
+    background-color: $accordianBackground !important;
+}
+
+.accordion-button {
+    color: $accordianInactiveFontColor !important;
+    background-color: $accordianInactiveBackground !important;
+    padding: 5px !important;
+    border-radius: 0px !important;
+}
+
+.accordion {
+    background-color: $panelBackground !important;
+    --bs-accordion-bg: $panelBackground !important;
+    font-size: 14px;
+}
+
+.page-header {
+    color: $accordianFontColor !important;
+    background-color: $accordianBackground !important;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.section-header {
+    color: $panelFontColor;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom:5px;
+}
+
+.page-icon {
+    margin-right: 20px;
+}
+
+.myspinner {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+
+.myspinner-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    color: black;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.mixing-potions {
+    font-size: 20px;
+    margin-left: -50px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.my-slider {
+    --mdc-slider-handle-color: $accordianBackground !important;
+    --mdc-slider-focus-handle-color: $accordianBackground !important;
+    --mdc-slider-active-track-color: $accordianBackground !important;
+    --mdc-slider-inactive-track-color: $accordianInactiveFontColor !important;
+  
+    --mdc-slider-inactive-track-height: 12px;
+  
+    --mdc-slider-handle-height: 15px;
+    --mdc-slider-handle-width: 15px;
+  
+    --mdc-slider-inactive-track-shape: 15px;
+
+    --mat-slider-hover-state-layer-color: rgba(18, 29, 83, 0.00);
+    --mat-slider-focus-state-layer-color: rgba(9, 48, 90, 0);
+    --mdc-slider-inactive-track-height: 4px;
+    --mdc-slider-inactive-track-shape: 9999px;
+
+    --mdc-slider-with-tick-marks-inactive-container-opacity: 1;
+    width: 500px;
+}
+
+.mdc-slider__thumb {
+    height: 30px !important;
+    width: 30px !important;
+}
+
+.mat-mdc-slider {
+    min-width: 200px !important;
+    height: 30px !important;
+}
+
+.mdc-checkbox__background {
+    left: 0px !important;
+}
+
+.mat-mdc-checkbox {
+    --mdc-checkbox-state-layer-size: 20px;
+    padding: 3px;
+}
+
+.header-might-collapse {
+    @media screen and (max-width: 766px) {
+        margin-top: 10px;
+      }
+}
+
+.mat-mdc-checkbox-touch-target { 
+    width: 20px !important;
+    height: 20px !important;
+}
+
+
+
+.mat-mdc-checkbox .mat-mdc-checkbox-ripple, .mdc-checkbox__ripple {
+    display: none !important;
+}
+
+.mat-mdc-checkbox .mdc-form-field .mdc-checkbox .mdc-checkbox__background {
+    background-color: $accordianBackground !important;
+    border-color: $accordianBackground !important;
+}
+
+button {
+    background-color: $accordianBackground !important;
+    color: $accordianFontColor !important;
+}
