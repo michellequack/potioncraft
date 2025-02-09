@@ -1,0 +1,6827 @@
+[
+    {
+        "name": "Abecean Longfin",
+        "value": 15,
+        "weight": 0.5,
+        "effects": [
+            "Weakness to Frost",
+            "Fortify Sneak",
+            "Weakness to Poison",
+            "Fortify Restoration"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Alocasia Fruit",
+        "dlc": "Rare Curios Creation",
+        "value": 22,
+        "weight": 0.25,
+        "effects": [
+            "Regenerate Stamina",
+            "Light",
+            "Ravage Magicka",
+            "Regenerate Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Light",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            }
+        ]
+    },
+    {
+        "name": "Ambrosia",
+        "dlc": "Rare Curios Creation",
+        "value": 15,
+        "weight": 0.1,
+        "effects": [
+            "Restore Health",
+            "Regenerate Health",
+            "Fortify Health",
+            "Cure Poison"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Cure Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1.56
+            }
+        ]
+    },
+    {
+        "name": "Ancestor Moth Wing",
+        "dlc": "Dawnguard",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Damage Stamina",
+            "Fortify Conjuration",
+            "Damage Magicka Regen",
+            "Fortify Enchanting"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Angelfish",
+        "dlc": "Fishing Creation",
+        "value": 30,
+        "weight": 0.25,
+        "effects": [
+            "Regenerate Health",
+            "Resist Fire",
+            "Fortify Marksman",
+            "Waterbreathing"
+        ],
+        "effectInfo": [
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Marksman",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Angler Larvae",
+        "dlc": "Fishing Creation",
+        "value": 1,
+        "weight": 0.25,
+        "effects": [
+            "Lingering Damage Health",
+            "Regenerate Stamina",
+            "Waterbreathing",
+            "Fortify Two-handed"
+        ],
+        "effectInfo": [
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Ash Creep Cluster",
+        "dlc": "Dragonborn",
+        "value": 20,
+        "weight": 0.25,
+        "effects": [
+            "Damage Stamina",
+            "Invisibility",
+            "Resist Fire",
+            "Fortify Destruction"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Ash Hopper Jelly",
+        "dlc": "Dragonborn",
+        "value": 20,
+        "weight": 0.25,
+        "effects": [
+            "Restore Health",
+            "Fortify Light Armor",
+            "Resist Shock",
+            "Weakness to Frost"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Ashen Grass Pod",
+        "dlc": "Dragonborn",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Resist Fire",
+            "Weakness to Shock",
+            "Fortify Lockpicking",
+            "Fortify Sneak"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Aster Bloom Core",
+        "dlc": "Rare Curios Creation",
+        "value": 40,
+        "weight": 0.1,
+        "effects": [
+            "Resist Magic",
+            "Fortify Light Armor",
+            "Fortify Block",
+            "Paralysis"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            }
+        ]
+    },
+    {
+        "name": "Bear Claws",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Health",
+            "Fortify One-handed",
+            "Damage Magicka Regen"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 0.8,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Bee",
+        "value": 3,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Ravage Stamina",
+            "Regenerate Stamina",
+            "Weakness to Shock"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Beehive Husk",
+        "value": 5,
+        "weight": 1,
+        "effects": [
+            "Resist Poison",
+            "Fortify Light Armor",
+            "Fortify Sneak",
+            "Fortify Destruction"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 0.5,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Berit's Ashes",
+        "dlc": "Quest*",
+        "value": 5,
+        "weight": 0.2,
+        "effects": [
+            "Damage Stamina",
+            "Resist Fire",
+            "Fortify Conjuration",
+            "Ravage Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Bittergreen Petals",
+        "dlc": "Rare Curios Creation",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Lingering Damage Stamina",
+            "Invisibility",
+            "Cure Poison",
+            "Damage Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1.5,
+                "value": 1.56
+            },
+            {
+                "name": "Cure Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            }
+        ]
+    },
+    {
+        "name": "Bleeding Crown",
+        "value": 10,
+        "weight": 0.3,
+        "effects": [
+            "Weakness to Fire",
+            "Fortify Block",
+            "Weakness to Poison",
+            "Resist Magic"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Blind Watcher's Eye",
+        "dlc": "Rare Curios Creation",
+        "value": 9,
+        "weight": 0.2,
+        "effects": [
+            "Light",
+            "Fortify Magicka",
+            "Fortify Alteration",
+            "Spell Absorption"
+        ],
+        "effectInfo": [
+            {
+                "name": "Light",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Spell Absorption",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Bliss Bug Thorax",
+        "dlc": "Saints & Seducers Creation",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Weakness to Fire",
+            "Resist Fire",
+            "Fortify Heavy Armor",
+            "Fortify Illusion"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 0.25,
+                "duration": 1,
+                "value": 0.21
+            }
+        ]
+    },
+    {
+        "name": "Blister Pod Cap",
+        "dlc": "Rare Curios Creation",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Fortify Magicka",
+            "Night Eye",
+            "Invisibility"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Night Eye",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1.5,
+                "value": 1.56
+            }
+        ]
+    },
+    {
+        "name": "Blisterwort",
+        "value": 12,
+        "weight": 0.2,
+        "effects": [
+            "Damage Stamina",
+            "Frenzy",
+            "Restore Health",
+            "Fortify Smithing"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 0.6,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Bloodgrass",
+        "dlc": "The Cause Creation",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Invisibility",
+            "Resist Poison",
+            "Slow",
+            "Fortify Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Blue Butterfly Wing",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Damage Stamina",
+            "Fortify Conjuration",
+            "Damage Magicka Regen",
+            "Fortify Enchanting"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Blue Dartwing",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Resist Shock",
+            "Fortify Pickpocket",
+            "Restore Health",
+            "Fear"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Pickpocket",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Blue Mountain Flower",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Health",
+            "Fortify Conjuration",
+            "Fortify Health",
+            "Damage Magicka Regen"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Boar Tusk",
+        "dlc": "Dragonborn",
+        "value": 20,
+        "weight": 0.5,
+        "effects": [
+            "Fortify Stamina",
+            "Fortify Health",
+            "Fortify Block",
+            "Frenzy"
+        ],
+        "effectInfo": [
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1.25,
+                "duration": 5,
+                "value": 7.5
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 5,
+                "value": 5.9
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Bog Beacon",
+        "dlc": "Rare Curios Creation",
+        "value": 20,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Fortify Heavy Armor",
+            "Fear",
+            "Damage Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Fear",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            }
+        ]
+    },
+    {
+        "name": "Bone Meal",
+        "value": 5,
+        "weight": 0.5,
+        "effects": [
+            "Damage Stamina",
+            "Resist Fire",
+            "Fortify Conjuration",
+            "Ravage Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Briar Heart",
+        "value": 20,
+        "weight": 0.5,
+        "effects": [
+            "Restore Magicka",
+            "Fortify Block",
+            "Paralysis",
+            "Fortify Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 0.5,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Bungler's Bane",
+        "dlc": "Rare Curios Creation",
+        "value": 50,
+        "weight": 0.5,
+        "effects": [
+            "Slow",
+            "Ravage Stamina",
+            "Damage Stamina Regen",
+            "Resist Magic"
+        ],
+        "effectInfo": [
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 3.34
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            }
+        ]
+    },
+    {
+        "name": "Burnt Spriggan Wood",
+        "dlc": "Dragonborn",
+        "value": 20,
+        "weight": 0.5,
+        "effects": [
+            "Weakness to Fire",
+            "Fortify Alteration",
+            "Damage Magicka Regen",
+            "Slow"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Butterfly Wing",
+        "value": 3,
+        "weight": 0.1,
+        "effects": [
+            "Restore Health",
+            "Fortify Barter",
+            "Lingering Damage Stamina",
+            "Damage Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Barter",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Canis Root",
+        "value": 5,
+        "weight": 0.1,
+        "effects": [
+            "Damage Stamina",
+            "Fortify One-handed",
+            "Fortify Marksman",
+            "Paralysis"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Marksman",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Charred Skeever Hide",
+        "value": 1,
+        "weight": 0.5,
+        "effects": [
+            "Restore Stamina",
+            "Cure Disease",
+            "Resist Poison",
+            "Restore Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 0.36
+            },
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Chaurus Eggs",
+        "value": 10,
+        "weight": 0.2,
+        "effects": [
+            "Weakness to Poison",
+            "Fortify Stamina",
+            "Damage Magicka",
+            "Invisibility"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Chaurus Hunter Antennae",
+        "dlc": "Dawnguard",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Damage Stamina",
+            "Fortify Conjuration",
+            "Damage Magicka Regen",
+            "Fortify Enchanting"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Chicken's Egg",
+        "value": 2,
+        "weight": 0.5,
+        "effects": [
+            "Resist Magic",
+            "Damage Magicka Regen",
+            "Waterbreathing",
+            "Lingering Damage Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Chokeberry",
+        "dlc": "Rare Curios Creation",
+        "value": 15,
+        "weight": 0.1,
+        "effects": [
+            "Damage Health",
+            "Ravage Health",
+            "Lingering Damage Health",
+            "Weakness to Poison"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 3.34
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            }
+        ]
+    },
+    {
+        "name": "Chokeweed",
+        "dlc": "Rare Curios Creation",
+        "value": 7,
+        "weight": 0.1,
+        "effects": [
+            "Weakness to Frost",
+            "Restore Stamina",
+            "Cure Disease",
+            "Damage Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.37
+            },
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 0.36
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.37
+            }
+        ]
+    },
+    {
+        "name": "Coda Flower",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.1,
+        "effects": [
+            "Damage Health",
+            "Lingering Damage Stamina",
+            "Ravage Magicka",
+            "Fortify Carry Weight"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Comberry",
+        "dlc": "Rare Curios Creation",
+        "value": 12,
+        "weight": 0.1,
+        "effects": [
+            "Damage Stamina",
+            "Spell Absorption",
+            "Restore Magicka",
+            "Fortify Destruction"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Spell Absorption",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            }
+        ]
+    },
+    {
+        "name": "Congealed Putrescence",
+        "dlc": "Rare Curios Creation",
+        "value": 9,
+        "weight": 0.1,
+        "effects": [
+            "Ravage Health",
+            "Restore Magicka",
+            "Weakness to Fire",
+            "Fortify Conjuration"
+        ],
+        "effectInfo": [
+            {
+                "name": "Ravage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 3.34
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            }
+        ]
+    },
+    {
+        "name": "Corkbulb Root",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.1,
+        "effects": [
+            "Paralysis",
+            "Restore Health",
+            "Resist Shock",
+            "Fortify Marksman"
+        ],
+        "effectInfo": [
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Fortify Marksman",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Creep Cluster",
+        "value": 1,
+        "weight": 0.2,
+        "effects": [
+            "Restore Magicka",
+            "Damage Stamina Regen",
+            "Fortify Carry Weight",
+            "Weakness to Magic"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Crimson Nirnroot",
+        "value": 10,
+        "weight": 0.2,
+        "effects": [
+            "Damage Health",
+            "Damage Stamina",
+            "Invisibility",
+            "Resist Magic"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 3,
+                "duration": 1,
+                "value": 3.3
+            },
+            {
+                "name": "Damage Stamina",
+                "magnitude": 3,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Cyrodilic Spadetail",
+        "value": 15,
+        "weight": 0.25,
+        "effects": [
+            "Damage Stamina",
+            "Fortify Restoration",
+            "Fear",
+            "Ravage Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Daedra Heart",
+        "value": 250,
+        "weight": 0.5,
+        "effects": [
+            "Restore Health",
+            "Damage Stamina Regen",
+            "Damage Magicka",
+            "Fear"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Daedra Silk",
+        "dlc": "Rare Curios Creation",
+        "value": 50,
+        "weight": 0.5,
+        "effects": [
+            "Lingering Damage Stamina",
+            "Paralysis",
+            "Night Eye",
+            "Invisibility"
+        ],
+        "effectInfo": [
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Night Eye",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1.5,
+                "value": 1.56
+            }
+        ]
+    },
+    {
+        "name": "Daedra Venin",
+        "dlc": "Rare Curios Creation",
+        "value": 50,
+        "weight": 0.2,
+        "effects": [
+            "Ravage Health",
+            "Paralysis",
+            "Fortify Destruction",
+            "Spell Absorption"
+        ],
+        "effectInfo": [
+            {
+                "name": "Ravage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 3.34
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Spell Absorption",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Daedroth Teeth",
+        "dlc": "Rare Curios Creation",
+        "value": 50,
+        "weight": 0.5,
+        "effects": [
+            "Resist Frost",
+            "Light",
+            "Damage Magicka Regen",
+            "Regenerate Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Frost",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Light",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            }
+        ]
+    },
+    {
+        "name": "Deathbell",
+        "value": 4,
+        "weight": 0.1,
+        "effects": [
+            "Damage Health",
+            "Ravage Stamina",
+            "Slow",
+            "Weakness to Poison"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.6
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 2.1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Dragon's Tongue",
+        "value": 5,
+        "weight": 0.1,
+        "effects": [
+            "Resist Fire",
+            "Fortify Barter",
+            "Fortify Illusion",
+            "Fortify Two-handed"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Barter",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Dreugh Wax",
+        "dlc": "Rare Curios Creation",
+        "value": 25,
+        "weight": 1,
+        "effects": [
+            "Weakness to Magic",
+            "Frenzy",
+            "Fortify Enchanting",
+            "Fortify Smithing"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Dwarven Oil",
+        "value": 15,
+        "weight": 0.25,
+        "effects": [
+            "Weakness to Magic",
+            "Fortify Illusion",
+            "Regenerate Magicka",
+            "Restore Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Ectoplasm",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Fortify Destruction",
+            "Fortify Magicka",
+            "Damage Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 0.8,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Elves Ear",
+        "value": 10,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Fortify Marksman",
+            "Weakness to Frost",
+            "Resist Fire"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Marksman",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Elytra Ichor",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Invisibility",
+            "Slow",
+            "Fear"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1.5,
+                "value": 1.56
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Fear",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            }
+        ]
+    },
+    {
+        "name": "Emperor Parasol Moss",
+        "dlc": "Dragonborn",
+        "value": 1,
+        "weight": 0.25,
+        "effects": [
+            "Damage Health",
+            "Fortify Magicka",
+            "Regenerate Health",
+            "Fortify Two-handed"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 10,
+                "value": 19.7
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Eye of Sabre Cat",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Ravage Health",
+            "Damage Magicka",
+            "Restore Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Falmer Ear",
+        "value": 10,
+        "weight": 0.2,
+        "effects": [
+            "Damage Health",
+            "Frenzy",
+            "Resist Poison",
+            "Fortify Lockpicking"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Felsaad Tern Feathers",
+        "dlc": "Dragonborn",
+        "value": 15,
+        "weight": 0.1,
+        "effects": [
+            "Restore Health",
+            "Fortify Light Armor",
+            "Cure Disease",
+            "Resist Magic"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Fire Petal",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.1,
+        "effects": [
+            "Damage Health",
+            "Resist Fire",
+            "Spell Absorption",
+            "Paralysis"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Spell Absorption",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            }
+        ]
+    },
+    {
+        "name": "Fire Salts",
+        "value": 50,
+        "weight": 0.25,
+        "effects": [
+            "Weakness to Frost",
+            "Resist Fire",
+            "Restore Magicka",
+            "Regenerate Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Flame Stalk",
+        "dlc": "Rare Curios Creation",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Restore Health",
+            "Resist Frost",
+            "Weakness to Fire",
+            "Invisibility"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1.5,
+                "value": 1.56
+            }
+        ]
+    },
+    {
+        "name": "Fly Amanita",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Resist Fire",
+            "Fortify Two-handed",
+            "Frenzy",
+            "Regenerate Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Frost Mirriam",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Resist Frost",
+            "Fortify Sneak",
+            "Ravage Magicka",
+            "Damage Stamina Regen"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Frost Salts",
+        "value": 100,
+        "weight": 0.25,
+        "effects": [
+            "Weakness to Fire",
+            "Resist Frost",
+            "Restore Magicka",
+            "Fortify Conjuration"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Fungus Stalk",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Fortify Health",
+            "Fortify Stamina",
+            "Waterbreathing"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1.25,
+                "duration": 5,
+                "value": 7.5
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1.25,
+                "duration": 5,
+                "value": 7.5
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1.6,
+                "value": 1.67
+            }
+        ]
+    },
+    {
+        "name": "Garlic",
+        "value": 1,
+        "weight": 0.25,
+        "effects": [
+            "Resist Poison",
+            "Fortify Stamina",
+            "Regenerate Magicka",
+            "Regenerate Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Giant Lichen",
+        "value": 5,
+        "weight": 0.25,
+        "effects": [
+            "Weakness to Shock",
+            "Ravage Health",
+            "Weakness to Poison",
+            "Restore Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Giant's Toe",
+        "value": 20,
+        "weight": 1,
+        "effects": [
+            "Damage Stamina",
+            "Fortify Health",
+            "Fortify Carry Weight",
+            "Damage Stamina Regen"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 5,
+                "value": 5.9
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Glassfish",
+        "dlc": "Fishing Creation",
+        "value": 1,
+        "weight": 0.25,
+        "effects": [
+            "Restore Magicka",
+            "Invisibility",
+            "Fortify Illusion",
+            "Fortify Persuasion"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 0.25,
+                "duration": 1,
+                "value": 0.21
+            },
+            {
+                "name": "Fortify Persuasion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Gleamblossom",
+        "dlc": "Dawnguard",
+        "value": 5,
+        "weight": 0.1,
+        "effects": [
+            "Resist Magic",
+            "Fear",
+            "Regenerate Health",
+            "Paralysis"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Glow Dust",
+        "value": 20,
+        "weight": 0.5,
+        "effects": [
+            "Damage Magicka",
+            "Damage Magicka Regen",
+            "Fortify Destruction",
+            "Resist Shock"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Glowing Mushroom",
+        "value": 5,
+        "weight": 0.2,
+        "effects": [
+            "Resist Shock",
+            "Fortify Destruction",
+            "Fortify Smithing",
+            "Fortify Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Gnarl Bark",
+        "dlc": "Rare Curios Creation",
+        "value": 15,
+        "weight": 0.1,
+        "effects": [
+            "Damage Health",
+            "Regenerate Health",
+            "Fortify Heavy Armor",
+            "Resist Fire"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            }
+        ]
+    },
+    {
+        "name": "Gold Kanet",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.1,
+        "effects": [
+            "Paralysis",
+            "Ravage Health",
+            "Weakness to Frost",
+            "Fortify Smithing"
+        ],
+        "effectInfo": [
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 3.34
+            },
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Goldfish",
+        "dlc": "Fishing Creation",
+        "value": 10,
+        "weight": 0.25,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Heavy Armor",
+            "Waterbreathing",
+            "Resist Frost"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Grass Pod",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Resist Poison",
+            "Ravage Magicka",
+            "Fortify Alteration",
+            "Restore Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Green Butterfly Wing",
+        "dlc": "Saints & Seducers Creation",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Fear",
+            "Slow",
+            "Invisibility"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 6,
+                "value": 0.57
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Hackle-Lo Leaf",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Paralysis",
+            "Waterbreathing",
+            "Fortify Restoration"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1.6,
+                "value": 1.67
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Hagraven Claw",
+        "value": 20,
+        "weight": 0.25,
+        "effects": [
+            "Resist Magic",
+            "Lingering Damage Magicka",
+            "Fortify Enchanting",
+            "Fortify Barter"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Barter",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Hagraven Feathers",
+        "value": 20,
+        "weight": 0.1,
+        "effects": [
+            "Damage Magicka",
+            "Fortify Conjuration",
+            "Frenzy",
+            "Weakness to Shock"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Hanging Moss",
+        "value": 1,
+        "weight": 0.25,
+        "effects": [
+            "Damage Magicka",
+            "Fortify Health",
+            "Damage Magicka Regen",
+            "Fortify One-handed"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Harrada",
+        "dlc": "The Cause Creation",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Damage Health",
+            "Damage Magicka",
+            "Paralysis",
+            "Damage Magicka Regen"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Hawk Beak",
+        "value": 15,
+        "weight": 0.25,
+        "effects": [
+            "Restore Stamina",
+            "Resist Frost",
+            "Fortify Carry Weight",
+            "Resist Shock"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Hawk Feathers",
+        "value": 15,
+        "weight": 0.1,
+        "effects": [
+            "Cure Disease",
+            "Fortify Light Armor",
+            "Fortify One-handed",
+            "Fortify Sneak"
+        ],
+        "effectInfo": [
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 0.36
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Hawk's Egg",
+        "dlc": "Hearthfire",
+        "value": 5,
+        "weight": 0.5,
+        "effects": [
+            "Resist Magic",
+            "Damage Magicka Regen",
+            "Waterbreathing",
+            "Lingering Damage Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Heart of Order",
+        "dlc": "Rare Curios Creation",
+        "value": 40,
+        "weight": 0.1,
+        "effects": [
+            "Restore Health",
+            "Fortify Health",
+            "Fortify One-handed",
+            "Fortify Two-handed"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1.25,
+                "duration": 5,
+                "value": 7.5
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Histcarp",
+        "value": 6,
+        "weight": 0.25,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Magicka",
+            "Damage Stamina Regen",
+            "Waterbreathing"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Honeycomb",
+        "value": 5,
+        "weight": 1,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Block",
+            "Fortify Light Armor",
+            "Ravage Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 0.5,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Human Flesh",
+        "value": 1,
+        "weight": 0.25,
+        "effects": [
+            "Damage Health",
+            "Paralysis",
+            "Restore Magicka",
+            "Fortify Sneak"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Human Heart",
+        "value": 0,
+        "weight": 1,
+        "effects": [
+            "Damage Health",
+            "Damage Magicka",
+            "Damage Magicka Regen",
+            "Frenzy"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Hunger Tongue",
+        "dlc": "Rare Curios Creation",
+        "value": 10,
+        "weight": 0.1,
+        "effects": [
+            "Weakness to Fire",
+            "Cure Disease",
+            "Cure Poison",
+            "Fortify Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1.33,
+                "duration": 2,
+                "value": 2.93
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 0.36
+            },
+            {
+                "name": "Cure Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Hydnum Azure Giant Spore",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.5,
+        "effects": [
+            "Resist Frost",
+            "Fortify Health",
+            "Regenerate Health",
+            "Light"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Frost",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1.25,
+                "duration": 5,
+                "value": 7.5
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Light",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Hypha Facia",
+        "dlc": "Rare Curios Creation",
+        "value": 23,
+        "weight": 0.1,
+        "effects": [
+            "Weakness to Poison",
+            "Frenzy",
+            "Ravage Stamina",
+            "Resist Magic"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 3.34
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            }
+        ]
+    },
+    {
+        "name": "Ice Wraith Teeth",
+        "value": 30,
+        "weight": 0.25,
+        "effects": [
+            "Weakness to Frost",
+            "Fortify Heavy Armor",
+            "Invisibility",
+            "Weakness to Fire"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Imp Gall",
+        "dlc": "Rare Curios Creation",
+        "value": 15,
+        "weight": 0.2,
+        "effects": [
+            "Damage Health",
+            "Weakness to Fire",
+            "Fortify Barter",
+            "Cure Poison"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Fortify Barter",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Cure Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Imp Stool",
+        "value": 0,
+        "weight": 0.3,
+        "effects": [
+            "Damage Health",
+            "Lingering Damage Health",
+            "Paralysis",
+            "Restore Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 0.6,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Jarrin Root",
+        "dlc": "Quest*",
+        "value": 10,
+        "weight": 0.5,
+        "effects": [
+            "Damage Health",
+            "Damage Magicka",
+            "Damage Stamina",
+            "Damage Magicka Regen"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 100,
+                "duration": 1,
+                "value": 158.5
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Jazbay Grapes",
+        "value": 1,
+        "weight": 0.2,
+        "effects": [
+            "Weakness to Magic",
+            "Fortify Magicka",
+            "Regenerate Magicka",
+            "Ravage Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Juniper Berries",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Weakness to Fire",
+            "Fortify Marksman",
+            "Regenerate Health",
+            "Damage Stamina Regen"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Marksman",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Juvenile Mudcrab",
+        "dlc": "Fishing Creation",
+        "value": 10,
+        "weight": 0.25,
+        "effects": [
+            "Regenerate Stamina",
+            "Fortify Carry Weight",
+            "Cure Disease",
+            "Fortify Two-handed"
+        ],
+        "effectInfo": [
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Kagouti Hide",
+        "dlc": "Rare Curios Creation",
+        "value": 20,
+        "weight": 1,
+        "effects": [
+            "Lingering Damage Stamina",
+            "Night Eye",
+            "Fortify Carry Weight",
+            "Resist Shock"
+        ],
+        "effectInfo": [
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Night Eye",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            }
+        ]
+    },
+    {
+        "name": "Kresh Fiber",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.1,
+        "effects": [
+            "Weakness to Magic",
+            "Slow",
+            "Fortify Sneak",
+            "Fortify Pickpocket"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Fortify Pickpocket",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Large Antlers",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Stamina",
+            "Slow",
+            "Damage Stamina Regen"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Lavender",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Resist Magic",
+            "Fortify Stamina",
+            "Ravage Magicka",
+            "Fortify Conjuration"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Lichor",
+        "dlc": "Rare Curios Creation",
+        "value": 15,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Regenerate Magicka",
+            "Fortify Magicka",
+            "Spell Absorption"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Spell Absorption",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Luminous Russula",
+        "dlc": "Rare Curios Creation",
+        "value": 25,
+        "weight": 0.2,
+        "effects": [
+            "Lingering Damage Stamina",
+            "Lingering Damage Health",
+            "Waterbreathing",
+            "Fear"
+        ],
+        "effectInfo": [
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1.6,
+                "value": 1.67
+            },
+            {
+                "name": "Fear",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            }
+        ]
+    },
+    {
+        "name": "Luna Moth Wing",
+        "value": 5,
+        "weight": 0.1,
+        "effects": [
+            "Damage Magicka",
+            "Fortify Light Armor",
+            "Regenerate Health",
+            "Invisibility"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Lyretail Anthias",
+        "dlc": "Fishing Creation",
+        "value": 30,
+        "weight": 0.25,
+        "effects": [
+            "Restore Magicka",
+            "Fortify Alteration",
+            "Fortify Conjuration",
+            "Fortify Carry Weight"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Marshmerrow",
+        "dlc": "Rare Curios Creation",
+        "value": 18,
+        "weight": 0.1,
+        "effects": [
+            "Restore Health",
+            "Fortify Carry Weight",
+            "Weakness to Magic",
+            "Damage Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            }
+        ]
+    },
+    {
+        "name": "Minotaur Horn",
+        "dlc": "Rare Curios Creation",
+        "value": 55,
+        "weight": 5,
+        "effects": [
+            "Resist Poison",
+            "Damage Magicka Regen",
+            "Regenerate Health",
+            "Regenerate Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            }
+        ]
+    },
+    {
+        "name": "Moon Sugar",
+        "value": 50,
+        "weight": 0.25,
+        "effects": [
+            "Weakness to Fire",
+            "Resist Frost",
+            "Restore Magicka",
+            "Regenerate Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Mora Tapinella",
+        "value": 4,
+        "weight": 0.25,
+        "effects": [
+            "Restore Magicka",
+            "Lingering Damage Health",
+            "Regenerate Stamina",
+            "Fortify Illusion"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Mort Flesh",
+        "dlc": "Plague of the Dead Creation",
+        "value": 2,
+        "weight": 0.5,
+        "effects": [
+            "Damage Health",
+            "Damage Magicka",
+            "Damage Magicka Regen",
+            "Frenzy"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Mudcrab Chitin",
+        "value": 2,
+        "weight": 0.25,
+        "effects": [
+            "Restore Stamina",
+            "Cure Disease",
+            "Resist Poison",
+            "Resist Fire"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Namira's Rot",
+        "value": 0,
+        "weight": 0.25,
+        "effects": [
+            "Damage Magicka",
+            "Fortify Lockpicking",
+            "Fear",
+            "Regenerate Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Netch Jelly",
+        "dlc": "Dragonborn",
+        "value": 20,
+        "weight": 0.5,
+        "effects": [
+            "Paralysis",
+            "Fortify Carry Weight",
+            "Restore Stamina",
+            "Fear"
+        ],
+        "effectInfo": [
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Stamina",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Nightshade",
+        "value": 8,
+        "weight": 0.1,
+        "effects": [
+            "Damage Health",
+            "Damage Magicka Regen",
+            "Lingering Damage Stamina",
+            "Fortify Destruction"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 0.8,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Nirnroot",
+        "value": 10,
+        "weight": 0.2,
+        "effects": [
+            "Damage Health",
+            "Damage Stamina",
+            "Invisibility",
+            "Resist Magic"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 10,
+                "value": 12.6
+            },
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Nordic Barnacle",
+        "value": 5,
+        "weight": 0.2,
+        "effects": [
+            "Damage Magicka",
+            "Waterbreathing",
+            "Regenerate Health",
+            "Fortify Pickpocket"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Pickpocket",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Ogre's Teeth",
+        "dlc": "Rare Curios Creation",
+        "value": 50,
+        "weight": 3,
+        "effects": [
+            "Weakness to Shock",
+            "Resist Poison",
+            "Lingering Damage Magicka",
+            "Regenerate Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Resist Poison",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.12
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            }
+        ]
+    },
+    {
+        "name": "Orange Dartwing",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Ravage Magicka",
+            "Fortify Pickpocket",
+            "Lingering Damage Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Pickpocket",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Pearl",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Block",
+            "Restore Magicka",
+            "Resist Shock"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Pearlfish",
+        "dlc": "Fishing Creation",
+        "value": 15,
+        "weight": 0.25,
+        "effects": [
+            "Restore Stamina",
+            "Resist Frost",
+            "Fortify Smithing",
+            "Fortify One-handed"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Pine Thrush Egg",
+        "value": 2,
+        "weight": 0.5,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Lockpicking",
+            "Weakness to Poison",
+            "Resist Shock"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Poison Bloom",
+        "dlc": "Dawnguard",
+        "value": 5,
+        "weight": 0.25,
+        "effects": [
+            "Damage Health",
+            "Slow",
+            "Fortify Carry Weight",
+            "Fear"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.6
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Powdered Mammoth Tusk",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Sneak",
+            "Weakness to Fire",
+            "Fear"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Purple Butterfly Wing",
+        "dlc": "Saints & Seducers Creation",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Regenerate Health",
+            "Regenerate Magicka",
+            "Regenerate Stamina",
+            "Paralysis"
+        ],
+        "effectInfo": [
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Purple Mountain Flower",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Sneak",
+            "Lingering Damage Magicka",
+            "Resist Frost"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Pygmy Sunfish",
+        "dlc": "Fishing Creation",
+        "value": 2,
+        "weight": 0.25,
+        "effects": [
+            "Restore Stamina",
+            "Lingering Damage Magicka",
+            "Damage Magicka Regen",
+            "Fortify Restoration"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Red Kelp Gas Bladder",
+        "dlc": "Rare Curios Creation",
+        "value": 20,
+        "weight": 0.1,
+        "effects": [
+            "Regenerate Stamina",
+            "Waterbreathing",
+            "Cure Disease",
+            "Fortify Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1.6,
+                "value": 1.67
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 0.36
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Red Mountain Flower",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Ravage Magicka",
+            "Fortify Magicka",
+            "Damage Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Redwort Flower",
+        "dlc": "Rare Curios Creation",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Resist Frost",
+            "Cure Poison",
+            "Damage Health",
+            "Invisibility"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Frost",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Cure Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1.5,
+                "value": 1.56
+            }
+        ]
+    },
+    {
+        "name": "River Betty",
+        "value": 15,
+        "weight": 0.25,
+        "effects": [
+            "Damage Health",
+            "Fortify Alteration",
+            "Slow",
+            "Fortify Carry Weight"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 2.5,
+                "duration": 10,
+                "value": 34.5
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Rock Warbler Egg",
+        "value": 2,
+        "weight": 0.5,
+        "effects": [
+            "Restore Health",
+            "Fortify One-handed",
+            "Damage Stamina",
+            "Weakness to Magic"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Roobrush",
+        "dlc": "Rare Curios Creation",
+        "value": 20,
+        "weight": 0.1,
+        "effects": [
+            "Weakness to Magic",
+            "Fortify Sneak",
+            "Lingering Damage Health",
+            "Cure Poison"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Cure Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Rot Scale",
+        "dlc": "Saints & Seducers Creation",
+        "value": 20,
+        "weight": 0.1,
+        "effects": [
+            "Slow",
+            "Lingering Damage Health",
+            "Fear",
+            "Paralysis"
+        ],
+        "effectInfo": [
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 3,
+                "value": 0.26
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 3,
+                "value": 3.34
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 0.16,
+                "value": 0.14
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Sabre Cat Tooth",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Heavy Armor",
+            "Fortify Smithing",
+            "Weakness to Poison"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Salmon Roe",
+        "dlc": "Hearthfire",
+        "value": 5,
+        "weight": 0.2,
+        "effects": [
+            "Restore Stamina",
+            "Waterbreathing",
+            "Fortify Magicka",
+            "Regenerate Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 0.4,
+                "duration": 1,
+                "value": 0.36
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 12,
+                "value": 15.4
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 12.5,
+                "duration": 0.08,
+                "value": 1.05
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Salt Pile",
+        "value": 2,
+        "weight": 0.2,
+        "effects": [
+            "Weakness to Magic",
+            "Fortify Restoration",
+            "Slow",
+            "Regenerate Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Saltrice",
+        "dlc": "Rare Curios Creation",
+        "value": 6,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Magicka",
+            "Damage Stamina Regen",
+            "Restore Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            }
+        ]
+    },
+    {
+        "name": "Scalon Fin",
+        "dlc": "Rare Curios Creation",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Waterbreathing",
+            "Damage Health",
+            "Lingering Damage Magicka",
+            "Damage Magicka Regen"
+        ],
+        "effectInfo": [
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1.6,
+                "value": 1.67
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            }
+        ]
+    },
+    {
+        "name": "Scaly Pholiota",
+        "value": 4,
+        "weight": 0.25,
+        "effects": [
+            "Weakness to Magic",
+            "Fortify Illusion",
+            "Regenerate Stamina",
+            "Fortify Carry Weight"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Scathecraw",
+        "dlc": "Dragonborn",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Ravage Health",
+            "Ravage Stamina",
+            "Ravage Magicka",
+            "Lingering Damage Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Screaming Maw",
+        "dlc": "Saints & Seducers Creation",
+        "value": 20,
+        "weight": 0.1,
+        "effects": [
+            "Regenerate Magicka",
+            "Fortify Alteration",
+            "Invisibility",
+            "Regenerate Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 4,
+                "duration": 0.2,
+                "value": 0.78
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 0.25,
+                "value": 0.22
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 4,
+                "duration": 0.03,
+                "value": 0.11
+            }
+        ]
+    },
+    {
+        "name": "Scrib Jelly",
+        "dlc": "Rare Curios Creation",
+        "value": 20,
+        "weight": 0.1,
+        "effects": [
+            "Regenerate Magicka",
+            "Cure Poison",
+            "Cure Disease",
+            "Regenerate Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Cure Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 0.36
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            }
+        ]
+    },
+    {
+        "name": "Scrib Jerky",
+        "dlc": "Rare Curios Creation",
+        "value": 15,
+        "weight": 0.2,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Stamina",
+            "Paralysis",
+            "Waterbreathing"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1.6,
+                "value": 1.67
+            }
+        ]
+    },
+    {
+        "name": "Silverside Perch",
+        "value": 15,
+        "weight": 0.25,
+        "effects": [
+            "Restore Stamina",
+            "Damage Stamina Regen",
+            "Ravage Health",
+            "Resist Frost"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Skeever Tail",
+        "value": 3,
+        "weight": 0.2,
+        "effects": [
+            "Damage Stamina Regen",
+            "Ravage Health",
+            "Damage Health",
+            "Fortify Light Armor"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Slaughterfish Egg",
+        "value": 3,
+        "weight": 0.2,
+        "effects": [
+            "Resist Poison",
+            "Fortify Pickpocket",
+            "Lingering Damage Health",
+            "Fortify Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Pickpocket",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Slaughterfish Scales",
+        "value": 3,
+        "weight": 0.1,
+        "effects": [
+            "Resist Frost",
+            "Lingering Damage Health",
+            "Fortify Heavy Armor",
+            "Fortify Block"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Sload Soap",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.1,
+        "effects": [
+            "Resist Fire",
+            "Fear",
+            "Fortify Conjuration",
+            "Fortify Alteration"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Fire",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Fear",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            }
+        ]
+    },
+    {
+        "name": "Small Antlers",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Weakness to Poison",
+            "Fortify Restoration",
+            "Lingering Damage Stamina",
+            "Damage Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Small Pearl",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Fortify One-handed",
+            "Fortify Restoration",
+            "Resist Frost"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Snowberries",
+        "value": 4,
+        "weight": 0.1,
+        "effects": [
+            "Resist Fire",
+            "Fortify Enchanting",
+            "Resist Frost",
+            "Resist Shock"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Spadefish",
+        "dlc": "Fishing Creation",
+        "value": 15,
+        "weight": 0.25,
+        "effects": [
+            "Restore Health",
+            "Fortify Lockpicking",
+            "Fortify Pickpocket",
+            "Cure Disease"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Pickpocket",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Spawn Ash",
+        "dlc": "Dragonborn",
+        "value": 20,
+        "weight": 0.1,
+        "effects": [
+            "Ravage Stamina",
+            "Resist Fire",
+            "Fortify Enchanting",
+            "Ravage Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Spiddal Stick",
+        "dlc": "The Cause Creation",
+        "value": 25,
+        "weight": 0.1,
+        "effects": [
+            "Damage Health",
+            "Damage Magicka",
+            "Weakness to Fire",
+            "Restore Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Spider Egg",
+        "value": 5,
+        "weight": 0.2,
+        "effects": [
+            "Damage Stamina",
+            "Damage Magicka Regen",
+            "Fortify Lockpicking",
+            "Fortify Marksman"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Marksman",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Spriggan Sap",
+        "value": 15,
+        "weight": 0.2,
+        "effects": [
+            "Damage Magicka Regen",
+            "Fortify Enchanting",
+            "Fortify Smithing",
+            "Fortify Alteration"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Steel-Blue Entoloma",
+        "dlc": "Goblins Creation",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Fortify Destruction",
+            "Resist Frost",
+            "Fortify Carry Weight"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Stoneflower Petals",
+        "dlc": "Rare Curios Creation",
+        "value": 15,
+        "weight": 0.1,
+        "effects": [
+            "Weakness to Shock",
+            "Fortify One-handed",
+            "Fortify Magicka",
+            "Fortify Enchanting"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 2,
+                "duration": 1,
+                "value": 2.14
+            }
+        ]
+    },
+    {
+        "name": "Swamp Fungal Pod",
+        "value": 5,
+        "weight": 0.25,
+        "effects": [
+            "Resist Shock",
+            "Lingering Damage Magicka",
+            "Paralysis",
+            "Restore Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Taproot",
+        "value": 15,
+        "weight": 0.5,
+        "effects": [
+            "Weakness to Magic",
+            "Fortify Illusion",
+            "Regenerate Magicka",
+            "Restore Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Thistle Branch",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Resist Frost",
+            "Ravage Stamina",
+            "Resist Poison",
+            "Fortify Heavy Armor"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Poison",
+                "magnitude": 0.75,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Thorn Hook",
+        "dlc": "Saints & Seducers Creation",
+        "value": 20,
+        "weight": 0.1,
+        "effects": [
+            "Lingering Damage Health",
+            "Paralysis",
+            "Regenerate Magicka",
+            "Regenerate Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 0.6,
+                "duration": 0.6,
+                "value": 0.32
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 0.6,
+                "duration": 0.6,
+                "value": 0.32
+            }
+        ]
+    },
+    {
+        "name": "Torchbug Thorax",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Lingering Damage Magicka",
+            "Weakness to Magic",
+            "Fortify Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Trama Root",
+        "dlc": "Dragonborn",
+        "value": 1,
+        "weight": 0.2,
+        "effects": [
+            "Weakness to Shock",
+            "Fortify Carry Weight",
+            "Damage Magicka",
+            "Slow"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Troll Fat",
+        "value": 15,
+        "weight": 1,
+        "effects": [
+            "Resist Poison",
+            "Fortify Two-handed",
+            "Frenzy",
+            "Damage Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Tundra Cotton",
+        "value": 1,
+        "weight": 0.1,
+        "effects": [
+            "Resist Magic",
+            "Fortify Magicka",
+            "Fortify Block",
+            "Fortify Barter"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Barter",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Vampire Dust",
+        "value": 25,
+        "weight": 0.2,
+        "effects": [
+            "Invisibility",
+            "Restore Magicka",
+            "Regenerate Health",
+            "Cure Disease"
+        ],
+        "effectInfo": [
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Void Essence",
+        "dlc": "Rare Curios Creation",
+        "value": 60,
+        "weight": 0.2,
+        "effects": [
+            "Restore Health",
+            "Fortify Health",
+            "Fortify Stamina",
+            "Regenerate Health"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1.25,
+                "duration": 5,
+                "value": 7.5
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1.25,
+                "duration": 5,
+                "value": 7.5
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            }
+        ]
+    },
+    {
+        "name": "Void Salts",
+        "value": 125,
+        "weight": 0.2,
+        "effects": [
+            "Weakness to Shock",
+            "Resist Magic",
+            "Damage Health",
+            "Fortify Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Watcher's Eye",
+        "dlc": "Rare Curios Creation",
+        "value": 9,
+        "weight": 0.2,
+        "effects": [
+            "Night Eye",
+            "Fortify Magicka",
+            "Fortify Illusion",
+            "Spell Absorption"
+        ],
+        "effectInfo": [
+            {
+                "name": "Night Eye",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 5,
+                "duration": 1,
+                "value": 5.87
+            },
+            {
+                "name": "Spell Absorption",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Wheat",
+        "value": 5,
+        "weight": 0.1,
+        "effects": [
+            "Restore Health",
+            "Fortify Health",
+            "Damage Stamina Regen",
+            "Lingering Damage Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "White Cap",
+        "value": 0,
+        "weight": 0.3,
+        "effects": [
+            "Weakness to Frost",
+            "Fortify Heavy Armor",
+            "Restore Magicka",
+            "Ravage Magicka"
+        ],
+        "effectInfo": [
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Wisp Stalk Caps",
+        "dlc": "Rare Curios Creation",
+        "value": 20,
+        "weight": 0.1,
+        "effects": [
+            "Damage Health",
+            "Weakness to Poison",
+            "Frenzy",
+            "Regenerate Stamina"
+        ],
+        "effectInfo": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            }
+        ]
+    },
+    {
+        "name": "Wisp Wrappings",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Restore Stamina",
+            "Fortify Destruction",
+            "Fortify Carry Weight",
+            "Resist Magic"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Withering Moon",
+        "dlc": "Rare Curios Creation",
+        "value": 5,
+        "weight": 0.1,
+        "effects": [
+            "Restore Magicka",
+            "Spell Absorption",
+            "Fortify Light Armor",
+            "Cure Disease"
+        ],
+        "effectInfo": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1.2,
+                "duration": 1,
+                "value": 1.22
+            },
+            {
+                "name": "Spell Absorption",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 0.36
+            }
+        ]
+    },
+    {
+        "name": "Worm's Head Cap",
+        "dlc": "Rare Curios Creation",
+        "value": 30,
+        "weight": 0.2,
+        "effects": [
+            "Fortify Lockpicking",
+            "Night Eye",
+            "Fortify Carry Weight",
+            "Slow"
+        ],
+        "effectInfo": [
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1.56
+            },
+            {
+                "name": "Night Eye",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1.27
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 2,
+                "value": 2.14
+            }
+        ]
+    },
+    {
+        "name": "Yellow Mountain Flower",
+        "dlc": "Dawnguard",
+        "value": 2,
+        "weight": 0.1,
+        "effects": [
+            "Resist Poison",
+            "Fortify Restoration",
+            "Fortify Health",
+            "Damage Stamina Regen"
+        ],
+        "effectInfo": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ]
+    }
+]

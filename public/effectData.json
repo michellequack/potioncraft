@@ -1,0 +1,602 @@
+[
+    {
+        "name": "Cure Disease",
+        "potionType": "potion",
+        "description": "Cures all diseases.",
+        "baseCost": 0.5,
+        "magnitude": 5,
+        "duration": 0,
+        "valueAt100Skill": 21,
+        "effectType": "duration"
+    },
+    {
+        "name": "Cure Poison",
+        "potionType": "potion",
+        "description": "Stops poison's continuing effects.",
+        "baseCost": 0.2,
+        "magnitude": 2,
+        "duration": 0,
+        "valueAt100Skill": 3,
+        "effectType": "none"
+    },
+    {
+        "name": "Damage Health",
+        "potionType": "poison",
+        "description": "Causes <mag> points of poison damage.",
+        "baseCost": 3,
+        "magnitude": 2,
+        "duration": 1,
+        "valueAt100Skill": 3,
+        "effectType": "duration"
+    },
+    {
+        "name": "Damage Magicka",
+        "potionType": "poison",
+        "description": "Drains the target's Magicka by <mag> points.",
+        "baseCost": 2.2,
+        "magnitude": 3,
+        "duration": 0,
+        "valueAt100Skill": 52,
+        "effectType": "duration"
+    },
+    {
+        "name": "Damage Magicka Regen",
+        "potionType": "poison",
+        "description": "Decrease the target's Magicka regeneration by <mag>% for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 100,
+        "duration": 5,
+        "valueAt100Skill": 265,
+        "effectType": "magnitude"
+    },
+    {
+        "name": "Damage Stamina",
+        "potionType": "poison",
+        "description": "Drain the target's Stamina by <mag> points.",
+        "baseCost": 1.8,
+        "magnitude": 3,
+        "duration": 0,
+        "valueAt100Skill": 43,
+        "effectType": "duration"
+    },
+    {
+        "name": "Damage Stamina Regen",
+        "potionType": "poison",
+        "description": "Decrease the target's Stamina regeneration by <mag>% for <dur> seconds.",
+        "baseCost": 0.3,
+        "magnitude": 100,
+        "duration": 5,
+        "valueAt100Skill": 159,
+        "effectType": "magnitude"
+    },
+    {
+        "name": "Fear",
+        "potionType": "poison",
+        "description": "Creatures and people up to level <mag> flee from combat for <dur> seconds.",
+        "baseCost": 5,
+        "magnitude": 1,
+        "duration": 30,
+        "valueAt100Skill": 120,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Alteration",
+        "potionType": "potion",
+        "description": "Alteration spells last <mag>% longer for <dur> seconds.",
+        "baseCost": 0.2,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 47,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Barter",
+        "potionType": "potion",
+        "description": "You haggle for <mag>% better prices for <dur> seconds.",
+        "baseCost": 2,
+        "magnitude": 1,
+        "duration": 30,
+        "valueAt100Skill": 48,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Block",
+        "potionType": "potion",
+        "description": "Blocking absorbs <mag>% more damage for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 118,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Carry Weight",
+        "potionType": "potion",
+        "description": "Carrying capacity increases by <mag> for <dur> seconds.",
+        "baseCost": 0.15,
+        "magnitude": 4,
+        "duration": 300,
+        "valueAt100Skill": 208,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Conjuration",
+        "potionType": "potion",
+        "description": "Conjurations spells last <mag>% longer for <dur> seconds.",
+        "baseCost": 0.25,
+        "magnitude": 5,
+        "duration": 60,
+        "valueAt100Skill": 75,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Destruction",
+        "potionType": "potion",
+        "description": "Destruction spells are <mag>% stronger for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 5,
+        "duration": 60,
+        "valueAt100Skill": 151,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Enchanting",
+        "potionType": "potion",
+        "description": "For <dur> seconds, items are enchanted <mag>% stronger.",
+        "baseCost": 0.6,
+        "magnitude": 1,
+        "duration": 30,
+        "valueAt100Skill": 14,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Health",
+        "potionType": "potion",
+        "description": "Health is increased by <mag> points for <dur> seconds.",
+        "baseCost": 0.35,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 82,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Heavy Armor",
+        "potionType": "potion",
+        "description": "Increase Heavy Armor skill by <mag> points for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 2,
+        "duration": 60,
+        "valueAt100Skill": 55,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Illusion",
+        "potionType": "potion",
+        "description": "Illusion spells are <mag>% stronger for <dur> seconds.",
+        "baseCost": 0.4,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 94,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Light Armor",
+        "potionType": "potion",
+        "description": "Increases Light Armor skill by <mag> points for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 2,
+        "duration": 60,
+        "valueAt100Skill": 55,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Lockpicking",
+        "potionType": "potion",
+        "description": "Lockpicking is <mag>% easier for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 2,
+        "duration": 30,
+        "valueAt100Skill": 25,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Magicka",
+        "potionType": "potion",
+        "description": "Magicka is increased by <mag> points for <dur> seconds.",
+        "baseCost": 0.3,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 71,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Marksman",
+        "potionType": "potion",
+        "description": "Bows do <mag>% more damage for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 118,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify One-handed",
+        "potionType": "potion",
+        "description": "One-handed weapons do <mag>% more damage for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 118,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Persuasion",
+        "potionType": "potion",
+        "description": "+<mag> Speechcraft for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 1,
+        "duration": 30,
+        "valueAt100Skill": 1,
+        "effectType": "none"
+    },
+    {
+        "name": "Fortify Pickpocket",
+        "potionType": "potion",
+        "description": "Pickpocketing is <mag>% easier for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 118,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Restoration",
+        "potionType": "potion",
+        "description": "Restoration spells are <mag>% stronger for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 118,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Smithing",
+        "potionType": "potion",
+        "description": "For <dur> seconds, weapon and armor improving is <mag>% better.",
+        "baseCost": 0.75,
+        "magnitude": 4,
+        "duration": 30,
+        "valueAt100Skill": 82,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Sneak",
+        "potionType": "potion",
+        "description": "You are <mag>% harder to detect for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 118,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Stamina",
+        "potionType": "potion",
+        "description": "Stamina is increased by <mag> points for <dur> seconds.",
+        "baseCost": 0.3,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 71,
+        "effectType": "duration"
+    },
+    {
+        "name": "Fortify Two-handed",
+        "potionType": "potion",
+        "description": "Two-handed weapons do <mag>% more damage for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 118,
+        "effectType": "duration"
+    },
+    {
+        "name": "Frenzy",
+        "potionType": "poison",
+        "description": "Creatures and people up to level <mag> will attack anything nearby for <dur> seconds.",
+        "baseCost": 15,
+        "magnitude": 1,
+        "duration": 10,
+        "valueAt100Skill": 107,
+        "effectType": "duration"
+    },
+    {
+        "name": "Invisibility",
+        "potionType": "potion",
+        "description": "Invisibility for <dur> seconds.",
+        "baseCost": 100,
+        "magnitude": 0,
+        "duration": 4,
+        "valueAt100Skill": 261,
+        "effectType": "magnitude"
+    },
+    {
+        "name": "Light",
+        "potionType": "potion",
+        "description": "Emits a small light that lasts for <dur> seconds.",
+        "baseCost": 1,
+        "magnitude": 1,
+        "duration": 1,
+        "valueAt100Skill": 25,
+        "effectType": "none"
+    },
+    {
+        "name": "Lingering Damage Health",
+        "potionType": "poison",
+        "description": "Causes <mag> points of poison damage for <dur> seconds.",
+        "baseCost": 12,
+        "magnitude": 1,
+        "duration": 10,
+        "valueAt100Skill": 86,
+        "effectType": "duration"
+    },
+    {
+        "name": "Lingering Damage Magicka",
+        "potionType": "poison",
+        "description": "Drains the target's Magicka by <mag> points per second for <dur> seconds.",
+        "baseCost": 10,
+        "magnitude": 1,
+        "duration": 10,
+        "valueAt100Skill": 71,
+        "effectType": "duration"
+    },
+    {
+        "name": "Lingering Damage Stamina",
+        "potionType": "poison",
+        "description": "Drain the target's Stamina by <mag> points per second for <dur> seconds.",
+        "baseCost": 1.8,
+        "magnitude": 1,
+        "duration": 10,
+        "valueAt100Skill": 12,
+        "effectType": "duration"
+    },
+    {
+        "name": "Night Eye",
+        "potionType": "potion",
+        "description": "Improved night vision for <dur> seconds.",
+        "baseCost": 1,
+        "magnitude": 1,
+        "duration": 1,
+        "valueAt100Skill": 38,
+        "effectType": "none"
+    },
+    {
+        "name": "Paralysis",
+        "potionType": "poison",
+        "description": "Target is paralyzed for <dur> seconds.",
+        "baseCost": 500,
+        "magnitude": 0,
+        "duration": 1,
+        "valueAt100Skill": 285,
+        "effectType": "magnitude"
+    },
+    {
+        "name": "Ravage Health",
+        "potionType": "poison",
+        "description": "Causes <mag> points of concentrated poison damage.",
+        "baseCost": 0.4,
+        "magnitude": 2,
+        "duration": 10,
+        "valueAt100Skill": 6,
+        "effectType": "duration"
+    },
+    {
+        "name": "Ravage Magicka",
+        "potionType": "poison",
+        "description": "Concentrated poison damages maximum magicka by <mag> points.",
+        "baseCost": 1,
+        "magnitude": 2,
+        "duration": 10,
+        "valueAt100Skill": 15,
+        "effectType": "duration"
+    },
+    {
+        "name": "Ravage Stamina",
+        "potionType": "poison",
+        "description": "Concentrated poison damages maximum stamina by <mag> points.",
+        "baseCost": 1.6,
+        "magnitude": 2,
+        "duration": 10,
+        "valueAt100Skill": 24,
+        "effectType": "duration"
+    },
+    {
+        "name": "Regenerate Health",
+        "potionType": "potion",
+        "description": "Health regenerates <mag>% faster for <dur> seconds.",
+        "baseCost": 0.1,
+        "magnitude": 5,
+        "duration": 300,
+        "valueAt100Skill": 177,
+        "effectType": "duration"
+    },
+    {
+        "name": "Regenerate Magicka",
+        "potionType": "potion",
+        "description": "Magicka regenerates <mag>% faster for <dur> seconds.",
+        "baseCost": 0.1,
+        "magnitude": 5,
+        "duration": 300,
+        "valueAt100Skill": 177,
+        "effectType": "duration"
+    },
+    {
+        "name": "Regenerate Stamina",
+        "potionType": "potion",
+        "description": "Stamina regenerates <mag>% faster for <dur> seconds.",
+        "baseCost": 0.1,
+        "magnitude": 5,
+        "duration": 300,
+        "valueAt100Skill": 177,
+        "effectType": "duration"
+    },
+    {
+        "name": "Resist Fire",
+        "potionType": "potion",
+        "description": "Resist <mag>% of fire damage for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 3,
+        "duration": 60,
+        "valueAt100Skill": 86,
+        "effectType": "duration"
+    },
+    {
+        "name": "Resist Frost",
+        "potionType": "potion",
+        "description": "Resist <mag>% of frost damage for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 3,
+        "duration": 60,
+        "valueAt100Skill": 86,
+        "effectType": "duration"
+    },
+    {
+        "name": "Resist Magic",
+        "potionType": "potion",
+        "description": "Resist <mag>% of magic for <dur> seconds.",
+        "baseCost": 1,
+        "magnitude": 1,
+        "duration": 60,
+        "valueAt100Skill": 51,
+        "effectType": "duration"
+    },
+    {
+        "name": "Resist Poison",
+        "potionType": "potion",
+        "description": "Resist <mag>% of poison for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 4,
+        "duration": 60,
+        "valueAt100Skill": 118,
+        "effectType": "duration"
+    },
+    {
+        "name": "Resist Shock",
+        "potionType": "potion",
+        "description": "Resist <mag>% of shock damage for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 3,
+        "duration": 60,
+        "valueAt100Skill": 86,
+        "effectType": "duration"
+    },
+    {
+        "name": "Restore Health",
+        "potionType": "potion",
+        "description": "Restore <mag> points of Health.",
+        "baseCost": 0.5,
+        "magnitude": 5,
+        "duration": 0,
+        "valueAt100Skill": 21,
+        "effectType": "duration"
+    },
+    {
+        "name": "Restore Magicka",
+        "potionType": "potion",
+        "description": "Restore <mag> points of Magicka.",
+        "baseCost": 0.6,
+        "magnitude": 5,
+        "duration": 0,
+        "valueAt100Skill": 25,
+        "effectType": "duration"
+    },
+    {
+        "name": "Restore Stamina",
+        "potionType": "potion",
+        "description": "Restore <mag> Stamina.",
+        "baseCost": 0.6,
+        "magnitude": 5,
+        "duration": 0,
+        "valueAt100Skill": 25,
+        "effectType": "duration"
+    },
+    {
+        "name": "Slow",
+        "potionType": "poison",
+        "description": "Target moves at 50% speed for <dur> seconds.",
+        "baseCost": 1,
+        "magnitude": 50,
+        "duration": 5,
+        "valueAt100Skill": 247,
+        "effectType": "magnitude"
+    },
+    {
+        "name": "Spell Absorption",
+        "potionType": "potion",
+        "description": "Absorb <mag>% of the magicka from hostile spells for <dur> seconds.",
+        "baseCost": 1,
+        "magnitude": 1,
+        "duration": 1,
+        "valueAt100Skill": 380,
+        "effectType": "none"
+    },
+    {
+        "name": "Waterbreathing",
+        "potionType": "potion",
+        "description": "Can breathe underwater for <dur> seconds.",
+        "baseCost": 30,
+        "magnitude": 0,
+        "duration": 5,
+        "valueAt100Skill": 100,
+        "effectType": "magnitude"
+    },
+    {
+        "name": "Weakness to Fire",
+        "potionType": "poison",
+        "description": "Target is <mag>% weaker to fire damage for <dur> seconds.",
+        "baseCost": 0.6,
+        "magnitude": 3,
+        "duration": 30,
+        "valueAt100Skill": 48,
+        "effectType": "duration"
+    },
+    {
+        "name": "Weakness to Frost",
+        "potionType": "poison",
+        "description": "Target is <mag>% weaker to frost damage for <dur> seconds.",
+        "baseCost": 0.5,
+        "magnitude": 3,
+        "duration": 30,
+        "valueAt100Skill": 40,
+        "effectType": "duration"
+    },
+    {
+        "name": "Weakness to Magic",
+        "potionType": "poison",
+        "description": "Target is <mag>% weaker to magic for <dur> seconds.",
+        "baseCost": 1,
+        "magnitude": 2,
+        "duration": 30,
+        "valueAt100Skill": 51,
+        "effectType": "duration"
+    },
+    {
+        "name": "Weakness to Poison",
+        "potionType": "poison",
+        "description": "Target is <mag>% weaker to poison for <dur> seconds.",
+        "baseCost": 1,
+        "magnitude": 2,
+        "duration": 30,
+        "valueAt100Skill": 51,
+        "effectType": "duration"
+    },
+    {
+        "name": "Weakness to Shock",
+        "potionType": "poison",
+        "description": "Target is <mag>% weaker to shock damage for <dur> seconds.",
+        "baseCost": 0.7,
+        "magnitude": 3,
+        "duration": 30,
+        "valueAt100Skill": 56,
+        "effectType": "duration"
+    }
+]
