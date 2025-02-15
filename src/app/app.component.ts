@@ -1,13 +1,14 @@
-import { AfterViewChecked, AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { PotionService } from './services/potion.service';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faFlask } from '@fortawesome/free-solid-svg-icons';
-import { SettingsComponent } from "./components/settings/settings.component"; 
+import { SettingsComponent } from "./components/settings/settings.component";
+import { InventoryComponent } from "./components/inventory/inventory.component"; 
 
 @Component({
   selector: 'app-root',
-  imports: [NgbAccordionModule, FontAwesomeModule, SettingsComponent],
+  imports: [NgbAccordionModule, FontAwesomeModule, SettingsComponent, InventoryComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

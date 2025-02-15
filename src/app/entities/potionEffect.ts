@@ -4,7 +4,6 @@ export class PotionEffect {
     name: string = '';
     description: string = '';
     potionType!: PotionType;
-    baseCost: number = 0;
     goldCost: number = 0;
     magnitude: number = 0;
     duration: number = 0;
