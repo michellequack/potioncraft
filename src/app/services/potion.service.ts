@@ -2,7 +2,7 @@ import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { Potion } from '../entities/potion';
 import { Ingredient } from '../entities/ingredient';
 import { Effect } from '../entities/effect';
-import { EffectType, PotionType } from '../entities/enums';
+import { EffectType, PotionType, Dlc } from '../entities/enums';
 
 import { HttpClient } from '@angular/common/http';
 import { forkJoin, Observable, of } from 'rxjs';
@@ -10,6 +10,7 @@ import { AlchemySettings } from '../entities/alchemySettings';
 import { PotionEffect } from '../entities/potionEffect';
 import { IngredientEffect } from '../entities/ingredientEffect';
 import { isPlatformBrowser } from '@angular/common';
+import { InventoryItem } from '../entities/inventoryItem';
 
 @Injectable({
   providedIn: 'root'
@@ -21,9 +22,12 @@ export class PotionService {
   private ingredientData: Map<string, Ingredient> = new Map<string, Ingredient>();
   public alchemySettings = new AlchemySettings();
 
+  public currentIngredients: Ingredient[] = [];
+  public currentInventory: InventoryItem[] = []; 
+
   public isLoading = true;
 
-  public localStorage!: Storage;
+  public samplePotion: Potion = new Potion();
 
   constructor(private http: HttpClient, 
     @Inject(PLATFORM_ID) private platformId: Object
@@ -37,7 +41,7 @@ export class PotionService {
     const $ingredients = this.http.get<Ingredient[]>('ingredientData.json');
     const $potions = this.http.get<Potion[]>('potionData.json');
 
-    return forkJoin( [$effects, $ingredients, $potions]);
+    return forkJoin([$effects, $ingredients, $potions]);
   }
 
   calculateInitialPotionInfo(effects: Effect[], ingredients: Ingredient[], 
@@ -51,19 +55,21 @@ export class PotionService {
     });
 
     ingredients.forEach((ingredient: Ingredient) => {
+      if (ingredient.dlc == undefined) {
+        ingredient.dlc = Dlc.Vanilla;
+      }
       this.ingredientData.set(ingredient.name, ingredient);
     });
 
     this.potionData = potions;
+    this.mixPotions();
     return of ("Done");
   }
 
   mixPotions() {
-    let potionCounter = -200000;
     const alchemistPerk = this.getAlchemistPerk();
 
     this.potionData.forEach((potion: Potion) => {
-      potionCounter++;
       let potionEffects: PotionEffect[] = [];
 
       let potionIngredients: Ingredient[] | undefined = potion.ingredients?.map((ingredientName: string) => {
@@ -76,33 +82,27 @@ export class PotionService {
         let effect = this.effectData.get(effectName);
         let potionEffect = new PotionEffect();
 
+        if (potion.id === "Bear Claws---Chicken's Egg---Giant's Toe") {
+          var s = 'stop';
+        }
+
         potionEffect.calculatedPower = this.calculateEffectPower(effect!, alchemistPerk);
 
         const maxIngredient = this.getMaxIngredient(potionIngredients!, effectName);
 
         const effectInfo = maxIngredient.effectInfo.filter(e => e.name === effectName)[0];
         const magnitude = this.getEffectMagnitude(effectInfo, effect!, potionEffect.calculatedPower);
-        let magnitudeFactor = magnitude > 0 ? magnitude : 1;
         const duration = this.getEffectDuration(effectInfo, effect!, potionEffect.calculatedPower);
-        let durationFactor = duration > 0 ? duration / 10 : 1;
 
         potionEffect.magnitude = magnitude;
         potionEffect.duration = duration;
 
-        const goldCost = Math.floor(
-          this.getEffectValue(effectInfo, effect!)
-          * Math.pow(magnitudeFactor * durationFactor, 1.1)
-        );
+        const goldCost = 
+          effect!.baseCost *
+          Math.max(Math.pow(magnitude, 1.1), 1) *
+          Math.max(Math.pow((duration / 10), 1.1), 1);
 
         potionEffect.goldCost = goldCost;
-
-        magnitudeFactor = effect!.magnitude > 0 ? effect!.magnitude : 1;
-        durationFactor = effect!.duration > 0 ? effect!.duration / 10 : 1;
-        const baseCost = Math.floor(
-          effect!.baseCost * Math.pow(magnitudeFactor * durationFactor, 1.1)
-        );
-
-        potionEffect.baseCost = baseCost;
 
         potionEffect.name = effectName;
         potionEffect.description = effect!.description;
@@ -114,7 +114,7 @@ export class PotionService {
       potion.potionEffects = potionEffects;
 
       const maxEffect = potionEffects.reduce((max, item) => {
-        return item.baseCost > max.baseCost ? item : max;
+        return item.goldCost > max.goldCost ? item : max;
       }, potionEffects[0]);
 
       potion.potionType = maxEffect.potionType;
@@ -130,7 +130,13 @@ export class PotionService {
         return a + b.goldCost;
       }, 0);
 
+      potion.cost = Math.floor(potion.cost);
+
     });
+
+    this.getCurrentIngredients();
+
+    this.samplePotion = this.potionData.find(p => p.id === "Bear Claws---Giant's Toe---River Betty")!;
   }
 
   getEffectMagnitude(effectInfo: IngredientEffect, effect: Effect, power: number) {
@@ -155,10 +161,6 @@ export class PotionService {
     else {
       return Math.round(effectInfo.duration! * effect.duration * power)
     }
-  }
-
-  getEffectValue(effectInfo: IngredientEffect, effect: Effect) {
-    return effectInfo.value! * effect.baseCost;
   }
 
   getMaxIngredient(ingredients: Ingredient[], effectName: string): Ingredient {
@@ -195,15 +197,18 @@ export class PotionService {
 
   getAlchemistPerk() {
     if (this.alchemySettings.alchemistPerkRank === 5) {
-      return 80;
+      return 100;
     }
     else if (this.alchemySettings.alchemistPerkRank === 4) {
-      return 60;
+      return 80;
     }
     else if (this.alchemySettings.alchemistPerkRank === 3) {
-      return 40;
+      return 60;
     }
     else if (this.alchemySettings.alchemistPerkRank === 2) {
+      return 40;
+    }
+    else if (this.alchemySettings.alchemistPerkRank === 1) {
       return 20;
     }
     else
@@ -244,6 +249,57 @@ export class PotionService {
     return arr.flatMap((v, i) =>
       this.getAllCombos(arr.slice(i+1), k-1, [...prefix, v])
     );
+  }
+
+  getCurrentIngredients(): void {
+    // Gets the list of ingredients available based on the
+    // chosen DLC's
+
+    // First, create the array of DLC enums
+    let dlcs: Dlc[] = [];
+
+    if (this.alchemySettings.useVanilla) {
+      dlcs.push(Dlc.Vanilla);
+    }
+    if (this.alchemySettings.useRareCurios) {
+      dlcs.push(Dlc.RareCurios);
+    }
+    if (this.alchemySettings.useDawnguard) {
+      dlcs.push(Dlc.Dawnguard);
+    }
+    if (this.alchemySettings.useFishing) {
+      dlcs.push(Dlc.FishingCreation);
+    }
+    if (this.alchemySettings.useDragonborn) {
+      dlcs.push(Dlc.Dragonborn);
+    }
+    if (this.alchemySettings.useQuest) {
+      dlcs.push(Dlc.Quest);
+    }
+    if (this.alchemySettings.useSaintsAndSeducers) {
+      dlcs.push(Dlc.SaintsAndSeducers);
+    } 
+
+    const ingredientValues = Array.from(this.ingredientData.values());
+
+    this.currentIngredients = [];
+
+    ingredientValues.forEach((ingredient) => {
+      let included = dlcs.includes(ingredient.dlc!);
+      if (included) {
+        this.currentIngredients.push(ingredient);
+      }
+    });
+    // this.currentIngredients = ingredientValues.filter((ingredient: Ingredient) => {
+    //   return dlcs.includes(ingredient.dlc!);
+    // });
+
+    this.currentInventory = this.currentIngredients.map((ingredient: Ingredient) => {
+      return {
+        ingredientName: ingredient.name,
+        quantity: 1
+      }
+    });
   }
 
   getAlchemySettings(): void {
