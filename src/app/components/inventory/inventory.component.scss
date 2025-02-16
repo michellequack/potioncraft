@@ -1,0 +1,43 @@
+.plus-span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.increment-button {
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    padding: 0px !important;
+    font-size: 11px;
+    line-height: 1px !important;
+}
+
+.name-span {
+    display: inline-block;
+}
+
+.quantity-span {
+    display: inline-block;
+    width: 55px;
+    text-align: center;
+}
+
+.quantity-input {
+    width: 53px;
+}
+
+.minus-span {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.inventory-item {
+    margin-bottom: 4px;
+}
+
+.card-columns {
+    column-count: 2;
+}
+

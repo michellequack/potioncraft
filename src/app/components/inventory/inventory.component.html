@@ -1,3 +1,13 @@
+{{potionService.message}}
+<div>
+    <ul class="list-unstyled card-columns">
 @for (inventoryItem of potionService.currentInventory; track inventoryItem.ingredientName) {
-    <div>{{inventoryItem.ingredientName}}</div>
+    <li class="inventory-item">
+        <span class="quantity-span">
+            <input class="quantity-input" type="number" [(ngModel)]="inventoryItem.quantity" />
+        </span>
+        <span class="name-span">{{inventoryItem.ingredientName}}</span>
+    </li>
 }
+    </ul>   
+</div>

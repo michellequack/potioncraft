@@ -17,7 +17,7 @@ export class AppComponent implements AfterViewInit {
   faFlask = faFlask;
 
   items = ['Settings', 'Inventory', 'Desired Effects', 'Potions'];
-  selectedItem = 'Settings';
+  selectedItem = 'Inventory';
 
   constructor(public potionService: PotionService) { }
 

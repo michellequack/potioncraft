@@ -97,23 +97,3 @@
     <button mat-flat-button (click)="mixPotions()">Remix Potions</button>
   </div>
 </div>
-<div>
-  {{potionService.samplePotion.id}}
-</div>
-<div>
-  {{potionService.samplePotion.name}}
-</div>
-<div>
-  {{potionService.samplePotion.cost}}
-</div>
-
-@for (item of potionService.samplePotion.potionEffects; track item.name) {
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;{{item.name}}</div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;{{item.description}}</div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;Mag: {{item.magnitude}}</div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;Dur: {{item.duration}}</div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;Power: {{item.calculatedPower}}</div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;Base Cost: {{item.baseCost}}</div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;Gold Cost:{{item.goldCost}}</div>
-  <div>---------------------------------------</div>
-}

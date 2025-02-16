@@ -29,6 +29,8 @@ export class PotionService {
 
   public samplePotion: Potion = new Potion();
 
+  public message = "Billy Joe Jim Bob";
+
   constructor(private http: HttpClient, 
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
@@ -67,76 +69,79 @@ export class PotionService {
   }
 
   mixPotions() {
-    const alchemistPerk = this.getAlchemistPerk();
 
-    this.potionData.forEach((potion: Potion) => {
-      let potionEffects: PotionEffect[] = [];
+    try {
+      const alchemistPerk = this.getAlchemistPerk();
 
-      let potionIngredients: Ingredient[] | undefined = potion.ingredients?.map((ingredientName: string) => {
-        const ing = this.ingredientData.get(ingredientName) ?? new Ingredient;
-        return ing!;
+      this.potionData.forEach((potion: Potion) => {
+
+        potion.potionEffects = [];
+        let potionIngredients: Ingredient[] | undefined = potion.ingredients?.map((ingredientName: string) => {
+          const ing = this.ingredientData.get(ingredientName) ?? new Ingredient;
+          return ing!;
+        });
+
+        potion.effects?.forEach((effectName: string) => {
+
+          let effect = this.effectData.get(effectName);
+          let potionEffect = new PotionEffect();
+
+          potionEffect.calculatedPower = this.calculateEffectPower(effect!, alchemistPerk);
+
+          const maxIngredient = this.getMaxIngredient(potionIngredients!, effectName);
+
+          const effectInfo = maxIngredient.effectInfo.filter(e => e.name === effectName)[0];
+          const magnitude = this.getEffectMagnitude(effectInfo, effect!, potionEffect.calculatedPower);
+          const duration = this.getEffectDuration(effectInfo, effect!, potionEffect.calculatedPower);
+
+          potionEffect.magnitude = magnitude;
+          potionEffect.duration = duration;
+
+          const goldCost = 
+            effect!.baseCost *
+            Math.max(Math.pow(magnitude, 1.1), 1) *
+            Math.max(Math.pow((duration / 10), 1.1), 1);
+
+          potionEffect.goldCost = goldCost;
+
+          potionEffect.name = effectName;
+          potionEffect.description = effect!.description;
+          potionEffect.potionType = effect!.potionType;
+
+          // potion.potionEffects.push(potionEffect);
+        });
+
+        // const maxEffect = potion.potionEffects.reduce((max, item) => {
+        //   return item.goldCost > max.goldCost ? item : max;
+        // }, potion.potionEffects[0]);
+
+        // potion.potionType = maxEffect.potionType;
+        
+        // if (potion.potionType === PotionType.Potion) {
+        //   potion.name = `Potion of ${maxEffect.name}`;
+        // }
+        // else {
+        //   potion.name = `Poison of ${maxEffect.name}`;
+        // }
+        
+        // potion.cost = potion.potionEffects.reduce((a, b) => {
+        //   return a + b.goldCost;
+        // }, 0);
+
+        // potion.cost = Math.floor(potion.cost);
+
       });
 
-      potion.effects?.forEach((effectName: string) => {
+      // this.getCurrentIngredients();
 
-        let effect = this.effectData.get(effectName);
-        let potionEffect = new PotionEffect();
-
-        if (potion.id === "Bear Claws---Chicken's Egg---Giant's Toe") {
-          var s = 'stop';
-        }
-
-        potionEffect.calculatedPower = this.calculateEffectPower(effect!, alchemistPerk);
-
-        const maxIngredient = this.getMaxIngredient(potionIngredients!, effectName);
-
-        const effectInfo = maxIngredient.effectInfo.filter(e => e.name === effectName)[0];
-        const magnitude = this.getEffectMagnitude(effectInfo, effect!, potionEffect.calculatedPower);
-        const duration = this.getEffectDuration(effectInfo, effect!, potionEffect.calculatedPower);
-
-        potionEffect.magnitude = magnitude;
-        potionEffect.duration = duration;
-
-        const goldCost = 
-          effect!.baseCost *
-          Math.max(Math.pow(magnitude, 1.1), 1) *
-          Math.max(Math.pow((duration / 10), 1.1), 1);
-
-        potionEffect.goldCost = goldCost;
-
-        potionEffect.name = effectName;
-        potionEffect.description = effect!.description;
-        potionEffect.potionType = effect!.potionType;
-
-        potionEffects.push(potionEffect);
-      });
-
-      potion.potionEffects = potionEffects;
-
-      const maxEffect = potionEffects.reduce((max, item) => {
-        return item.goldCost > max.goldCost ? item : max;
-      }, potionEffects[0]);
-
-      potion.potionType = maxEffect.potionType;
-      
-      if (potion.potionType === PotionType.Potion) {
-        potion.name = `Potion of ${maxEffect.name}`;
-      }
-      else {
-        potion.name = `Poison of ${maxEffect.name}`;
-      }
-      
-      potion.cost = potionEffects.reduce((a, b) => {
-        return a + b.goldCost;
-      }, 0);
-
-      potion.cost = Math.floor(potion.cost);
-
-    });
-
-    this.getCurrentIngredients();
-
-    this.samplePotion = this.potionData.find(p => p.id === "Bear Claws---Giant's Toe---River Betty")!;
+      // this.samplePotion = this.potionData.find(p => p.id === "Bear Claws---Giant's Toe---River Betty")!;
+    }
+    catch(e: any) {
+      alert(e.message);
+    }
+    finally {
+      // this.message = this.samplePotion.name;
+    }
   }
 
   getEffectMagnitude(effectInfo: IngredientEffect, effect: Effect, power: number) {
@@ -290,14 +295,11 @@ export class PotionService {
         this.currentIngredients.push(ingredient);
       }
     });
-    // this.currentIngredients = ingredientValues.filter((ingredient: Ingredient) => {
-    //   return dlcs.includes(ingredient.dlc!);
-    // });
 
     this.currentInventory = this.currentIngredients.map((ingredient: Ingredient) => {
       return {
         ingredientName: ingredient.name,
-        quantity: 1
+        quantity: Math.floor(Math.random() * (200 - 1 + 1) + 1)
       }
     });
   }
