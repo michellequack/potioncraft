@@ -7,6 +7,7 @@ $panelBackground: #f2e9d6;
 $panelFontColor: #33220d;
 $accordianBackground: #33220d;
 $accordianFontColor: #f2e9d6;
+$buttonColor: #5C4033;
 $accordianInactiveBackground: #d4d4d4;
 $accordianInactiveFontColor: #040404;
 
@@ -143,6 +144,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 button {
-    background-color: $accordianBackground !important;
+    background-color: $buttonColor !important;
     color: $accordianFontColor !important;
 }
