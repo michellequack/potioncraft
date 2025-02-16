@@ -108,31 +108,31 @@ export class PotionService {
           potionEffect.description = effect!.description;
           potionEffect.potionType = effect!.potionType;
 
-          // potion.potionEffects.push(potionEffect);
+          potion.potionEffects.push(potionEffect);
         });
 
-        // const maxEffect = potion.potionEffects.reduce((max, item) => {
-        //   return item.goldCost > max.goldCost ? item : max;
-        // }, potion.potionEffects[0]);
+        const maxEffect = potion.potionEffects.reduce((max, item) => {
+          return item.goldCost > max.goldCost ? item : max;
+        }, potion.potionEffects[0]);
 
-        // potion.potionType = maxEffect.potionType;
+        potion.potionType = maxEffect.potionType;
         
-        // if (potion.potionType === PotionType.Potion) {
-        //   potion.name = `Potion of ${maxEffect.name}`;
-        // }
-        // else {
-        //   potion.name = `Poison of ${maxEffect.name}`;
-        // }
+        if (potion.potionType === PotionType.Potion) {
+          potion.name = `Potion of ${maxEffect.name}`;
+        }
+        else {
+          potion.name = `Poison of ${maxEffect.name}`;
+        }
         
-        // potion.cost = potion.potionEffects.reduce((a, b) => {
-        //   return a + b.goldCost;
-        // }, 0);
+        potion.cost = potion.potionEffects.reduce((a, b) => {
+          return a + b.goldCost;
+        }, 0);
 
-        // potion.cost = Math.floor(potion.cost);
+        potion.cost = Math.floor(potion.cost);
 
       });
 
-      // this.getCurrentIngredients();
+      this.getCurrentIngredients();
 
       // this.samplePotion = this.potionData.find(p => p.id === "Bear Claws---Giant's Toe---River Betty")!;
     }

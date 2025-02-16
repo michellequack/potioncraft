@@ -24,7 +24,7 @@ export class AppComponent implements AfterViewInit {
   ngOnInit(): void {
     this.potionService.getJsonData()
     .subscribe(([effects, ingredients, potions]) => {
-      this.potionService.isLoading = true;
+      // this.potionService.isLoading = true;
       this.potionService.calculateInitialPotionInfo(effects, ingredients, potions).subscribe((returnStr) => {
       });
       
