@@ -1,13 +1,20 @@
-{{potionService.message}}
 <div>
     <ul class="list-unstyled card-columns">
 @for (inventoryItem of potionService.currentInventory; track inventoryItem.ingredientName) {
     <li class="inventory-item">
-        <span class="quantity-span">
-            <input class="quantity-input" type="number" [(ngModel)]="inventoryItem.quantity" />
-        </span>
-        <span class="name-span">{{inventoryItem.ingredientName}}</span>
+        <div class="form-group" style="vertical-align: top;">
+            <span class="plus-span">
+                <button class="light-button increment-button" (click)="addItem(inventoryItem.ingredientName)">+</button>
+            </span>
+            <span class="quantity-span">
+                <input class="quantity-input" inputmode="numeric" [(ngModel)]="inventoryItem.quantity" />
+            </span>
+            <span class="minus-span">
+                <button class="light-button increment-button"
+                (click)="subtractItem(inventoryItem.ingredientName)">-</button>
+            </span>
+            <span class="name-span">{{inventoryItem.ingredientName}}</span>
+        </div>
     </li>
 }
-    </ul>   
-</div>
+

@@ -27,10 +27,6 @@ export class PotionService {
 
   public isLoading = true;
 
-  public samplePotion: Potion = new Potion();
-
-  public message = "Billy Joe Jim Bob";
-
   constructor(private http: HttpClient, 
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
@@ -133,8 +129,6 @@ export class PotionService {
       });
 
       this.getCurrentIngredients();
-
-      // this.samplePotion = this.potionData.find(p => p.id === "Bear Claws---Giant's Toe---River Betty")!;
     }
     catch(e: any) {
       alert(e.message);
@@ -296,11 +290,14 @@ export class PotionService {
       }
     });
 
+
     this.currentInventory = this.currentIngredients.map((ingredient: Ingredient) => {
-      return {
+      let newItem: InventoryItem = {
         ingredientName: ingredient.name,
-        quantity: Math.floor(Math.random() * (200 - 1 + 1) + 1)
-      }
+        quantity: 0
+      };
+
+      return newItem;
     });
   }
 

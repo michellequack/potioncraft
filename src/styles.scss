@@ -7,11 +7,11 @@ $panelBackground: #f2e9d6;
 $panelFontColor: #33220d;
 $accordianBackground: #33220d;
 $accordianFontColor: #f2e9d6;
-$buttonColor: #5C4033;
+$buttonColor: #33220d;
 $accordianInactiveBackground: #d4d4d4;
 $accordianInactiveFontColor: #040404;
 
-// Style the accordian
+
 .accordion-button:not(.collapsed) {
     color: $accordianFontColor !important;
     background-color: $accordianBackground !important;
@@ -119,12 +119,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-mdc-checkbox {
     --mdc-checkbox-state-layer-size: 20px;
     padding: 3px;
-}
-
-.header-might-collapse {
-    @media screen and (max-width: 766px) {
-        margin-top: 10px;
-      }
+    --mdc-checkbox-selected-checkmark-color: $panelFontColor !important;
+    
 }
 
 .mat-mdc-checkbox-touch-target { 
@@ -133,17 +129,40 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 
-
-.mat-mdc-checkbox .mat-mdc-checkbox-ripple, .mdc-checkbox__ripple {
+.mat-mdc-checkbox-ripple, .mdc-checkbox__ripple {
     display: none !important;
 }
 
 .mat-mdc-checkbox .mdc-form-field .mdc-checkbox .mdc-checkbox__background {
-    background-color: $accordianBackground !important;
+    background-color: $panelBackground !important;
     border-color: $accordianBackground !important;
 }
 
 button {
     background-color: $buttonColor !important;
     color: $accordianFontColor !important;
+
+}
+
+.light-button {
+    background-color: $panelBackground !important;
+    color: $panelFontColor !important;
+    border-color: #767674 !important; 
+    border-style:solid;
+    border-width: 1px;
+}
+
+.header-might-collapse {
+    @media screen and (max-width: 766px) {
+        margin-top: 10px;
+      }
+}
+
+input {
+    background-color: $panelBackground;
+    border-radius: 4px;
+    border-color: #767674;
+    border-style:solid;
+    border-width: 1px;
+    user-select: all;
 }
