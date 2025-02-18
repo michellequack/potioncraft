@@ -11,6 +11,7 @@ import { PotionEffect } from '../entities/potionEffect';
 import { IngredientEffect } from '../entities/ingredientEffect';
 import { isPlatformBrowser } from '@angular/common';
 import { InventoryItem } from '../entities/inventoryItem';
+import { EffectItem } from '../entities/effectItem';
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +25,14 @@ export class PotionService {
 
   public currentIngredients: Ingredient[] = [];
   public currentInventory: InventoryItem[] = []; 
+  public currentEffects: EffectItem[] = [];
+  public currentPotions: Potion[] = [];
+
+  public currentPotionsPage: Potion[] = [];
+  public numPotionsToShow: number = 20;
+
+  public selectedAccordionItem: string = 'Inventory';
+  public lastSelectedAccordianItem = 'Inventory';
 
   public isLoading = true;
 
@@ -42,14 +51,51 @@ export class PotionService {
     return forkJoin([$effects, $ingredients, $potions]);
   }
 
+  accordionItemSelected(selectedItem: string) {
+    if (selectedItem === this.lastSelectedAccordianItem) {
+      return;
+    }
+
+    if (this.lastSelectedAccordianItem === 'Settings') {
+        this.saveAlchemySettingsToLocalStorage();
+        this.mixPotions();
+    }
+    else if (this.lastSelectedAccordianItem === 'Desired Effects') {
+      this.saveCurrentEffectsToLocalStorage();
+    }
+    else if (this.lastSelectedAccordianItem === 'Inventory') {
+      this.saveCurrentInventoryToLocalStorage();
+    }
+
+    if (selectedItem === 'Potions') {
+      this.selectPotions();
+    }
+
+    this.lastSelectedAccordianItem = selectedItem;
+    this.selectedAccordionItem = selectedItem;
+  }
+
   calculateInitialPotionInfo(effects: Effect[], ingredients: Ingredient[], 
     potions: Potion[]): Observable<string>
   {
 
-    this.getAlchemySettings();
+    let storedAccordionSelection = localStorage.getItem('accordionSelection');
+
+    if (storedAccordionSelection) {
+      this.selectedAccordionItem = 'Inventory';
+      this.lastSelectedAccordianItem = 'Inventory';
+    }
+    else {
+      this.selectedAccordionItem = 'Settings';
+      this.lastSelectedAccordianItem = 'Settings';
+      localStorage.setItem('accordionSelection', 'Inventory');
+    }
+
+    this.getAlchemySettingsFromLocalStorage();
     
     effects.forEach((effect: Effect) => {
       this.effectData.set(effect.name, effect);
+      this.currentEffects.push(new EffectItem (effect.name, true));
     });
 
     ingredients.forEach((ingredient: Ingredient) => {
@@ -61,6 +107,9 @@ export class PotionService {
 
     this.potionData = potions;
     this.mixPotions();
+    this.getCurrentEffectsFromLocalStorage();
+    this.getCurrentInventoryFromLocalStorage();
+    this.selectPotions();
     return of ("Done");
   }
 
@@ -70,6 +119,10 @@ export class PotionService {
       const alchemistPerk = this.getAlchemistPerk();
 
       this.potionData.forEach((potion: Potion) => {
+
+        if (potion.id === 'Bleeding Crown---Honeycomb---Tundra Cotton') {
+          var s = 'stop';
+        }
 
         potion.potionEffects = [];
         let potionIngredients: Ingredient[] | undefined = potion.ingredients?.map((ingredientName: string) => {
@@ -107,6 +160,8 @@ export class PotionService {
           potion.potionEffects.push(potionEffect);
         });
 
+        potion.potionEffects = potion.potionEffects.sort((a, b) => a.magnitude - b.magnitude);
+
         const maxEffect = potion.potionEffects.reduce((max, item) => {
           return item.goldCost > max.goldCost ? item : max;
         }, potion.potionEffects[0]);
@@ -125,10 +180,11 @@ export class PotionService {
         }, 0);
 
         potion.cost = Math.floor(potion.cost);
+        potion.numCrafted = 1;
 
       });
 
-      this.getCurrentIngredients();
+      this.findCurrentIngredients();
     }
     catch(e: any) {
       alert(e.message);
@@ -250,7 +306,7 @@ export class PotionService {
     );
   }
 
-  getCurrentIngredients(): void {
+  findCurrentIngredients(): void {
     // Gets the list of ingredients available based on the
     // chosen DLC's
 
@@ -290,18 +346,183 @@ export class PotionService {
       }
     });
 
+    const newInventory: InventoryItem[] = this.currentIngredients.map((ingredient: Ingredient) => {
+      const existingItem = this.currentInventory.find(i => i.ingredientName === ingredient.name);
+      let quantity = 0;
 
-    this.currentInventory = this.currentIngredients.map((ingredient: Ingredient) => {
+      if (existingItem) {
+        quantity = existingItem.quantity
+      };
+
       let newItem: InventoryItem = {
         ingredientName: ingredient.name,
-        quantity: 0
+        quantity: quantity
       };
 
       return newItem;
     });
+
+    this.currentInventory = newInventory;
   }
 
-  getAlchemySettings(): void {
+  selectPotions(): void {
+    
+    const selectedEffects = this.currentEffects.filter(e => e.isSelected === true).map(e => e.name);
+    const selectedInventory = this.currentInventory.filter(i => i.quantity > 0).map(i => i.ingredientName);
+
+    this.currentPotions = [];
+
+    this.potionData.forEach((potion: Potion) => {
+
+      if (potion.id === 'Human Heart---Imp Stool---Jarrin Root') {
+        var s = "stop";
+      }
+      const hasTheEffects = selectedEffects.some(se => potion.effects?.includes(se));
+
+      let hasAllIngredients = true;
+
+      for (let ingredientName of potion.ingredients!) {
+        let inventoryItem = selectedInventory.find(i => i === ingredientName);
+
+        if (!inventoryItem) {
+          hasAllIngredients = false;
+          // Stop testing once we find one that it doesn't have.
+          return;
+        }
+      }
+
+      const hasTheIngredients = selectedInventory.some(si => potion.ingredients?.includes(si));
+
+      if (hasTheEffects && hasTheIngredients) {
+        let inventoryArray: InventoryItem[] = [];
+
+        potion.ingredients?.forEach((ingredientName: string) => {
+          inventoryArray.push(this.currentInventory.find(i => i.ingredientName === ingredientName)!);
+        });
+
+        const minInventory = inventoryArray.reduce((max, item) => {
+          return item.quantity < max.quantity ? item : max;
+        }, inventoryArray[0]);
+
+        potion.numAvailable = minInventory.quantity;
+        this.currentPotions.push(potion);
+      }
+
+    });
+
+    this.currentPotions = this.currentPotions.sort((a, b) => b.cost - a.cost);
+
+    if (this.currentPotions.length > 20) {
+      this.numPotionsToShow = 20;
+    }
+    else {
+      this.numPotionsToShow = this.currentPotions.length;
+    }
+
+    this.currentPotionsPage = this.currentPotions.slice(0, this.numPotionsToShow + 1);
+  }
+
+  showMorePotions(): void {
+    this.numPotionsToShow += 20;
+
+    if (this.numPotionsToShow > this.currentPotions.length) {
+      this.numPotionsToShow = this.currentPotions.length;
+    }
+
+    this.currentPotionsPage = this.currentPotions.slice(0, this.numPotionsToShow + 1);
+  }
+
+  subtractIngredients(potion: Potion) {
+    if (potion.numCrafted > potion.numAvailable) {
+      //TODO: change this to a nice toast instead of an ugly alert.
+      alert("Nope, that's too many.");
+      return;
+    }
+    let inventoryArray: InventoryItem[] = [];
+
+    potion.ingredients?.forEach((ingredientName: string) => {
+      let item = this.currentInventory.find(i => i.ingredientName === ingredientName)!;
+      item.quantity -= potion.numCrafted;
+
+      if (item.quantity < 0) {
+        item.quantity = 0;
+      }
+    });
+
+    this.selectPotions();
+  }
+
+  getCurrentEffectsFromLocalStorage(): void {
+    const effectString = localStorage.getItem('currentEffects');
+    if (effectString) {
+      const effectNameArray = effectString.split('|');
+
+      if (effectNameArray.length > 0) {
+        this.currentEffects.forEach((effectItem: EffectItem) => {
+          effectItem.isSelected = false;
+        });
+      }
+
+      effectNameArray.forEach((name: string) => {
+        let effectItem = this.currentEffects.find(e => e.name === name);
+        effectItem!.isSelected = true;
+      })
+    }
+  }
+
+  saveCurrentEffectsToLocalStorage(): void {
+    const selectedEffects = this.currentEffects.filter(e => e.isSelected === true).map(e => e.name);
+
+    if (selectedEffects.length > 0) {
+      const effectString = selectedEffects.join('|');
+      localStorage.setItem('currentEffects', effectString);
+    }
+    else {
+      localStorage.removeItem('currentEffects');
+    }
+    
+  }  
+
+  getCurrentInventoryFromLocalStorage(): void {
+    // Stored as Bee;22|Deathbell;42
+    const ingredientString = localStorage.getItem('currentInventory');
+    if (ingredientString) {
+      const ingredientCombinedArray = ingredientString.split('|');
+
+      if (ingredientCombinedArray.length > 0) {
+        this.currentInventory.forEach((inventoryItem: InventoryItem) => {
+          inventoryItem.quantity = 0;
+        });
+      }
+
+      ingredientCombinedArray.forEach((item: string) => {
+        const itemArray = item.split(';');
+        const name = itemArray[0];
+        const quantity = parseInt(itemArray[1]);
+        let inventoryItem = this.currentInventory.find(e => e.ingredientName === name);
+
+        if (inventoryItem) {
+          inventoryItem!.quantity = quantity; 
+        }
+      })
+    }
+  }
+
+  saveCurrentInventoryToLocalStorage(): void {
+    const selectedInventory = 
+      this.currentInventory.filter(i => i.quantity > 0).map(i => i.ingredientName + ';' + i.quantity);
+
+    if (selectedInventory.length > 0) {
+      const inventoryString = selectedInventory.join('|');
+      localStorage.setItem('currentInventory', inventoryString);
+    }
+    else 
+    {
+      localStorage.removeItem('currentInventory');
+    }
+  }  
+
+  getAlchemySettingsFromLocalStorage(): void {
     if (isPlatformBrowser(this.platformId)) {
       this.alchemySettings.alchemySkillLevel = this.getNumberFromLocalStorage("alchemySkillLevel", 15);
       this.alchemySettings.alchemistPerkRank = this.getNumberFromLocalStorage("alchemistPerkRank", 0);
@@ -322,7 +543,7 @@ export class PotionService {
     }
   }
 
-  setAlchemySettings(): void {
+  saveAlchemySettingsToLocalStorage(): void {
     {
       this.setNumberInLocalStorage("alchemySkillLevel", this.alchemySettings.alchemySkillLevel);
       this.setNumberInLocalStorage("alchemistPerkRank", this.alchemySettings.alchemistPerkRank);

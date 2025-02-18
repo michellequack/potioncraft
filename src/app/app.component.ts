@@ -2,23 +2,24 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { PotionService } from './services/potion.service';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faFlask } from '@fortawesome/free-solid-svg-icons';
+import { faFlask, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { SettingsComponent } from "./components/settings/settings.component";
-import { InventoryComponent } from "./components/inventory/inventory.component"; 
+import { InventoryComponent } from "./components/inventory/inventory.component";
+import { DesiredEffectsComponent } from "./components/desired-effects/desired-effects.component";
+import { PotionSelectorComponent } from "./components/potion-selector/potion-selector.component"; 
 
 @Component({
   selector: 'app-root',
-  imports: [NgbAccordionModule, FontAwesomeModule, SettingsComponent, InventoryComponent],
+  imports: [NgbAccordionModule, FontAwesomeModule, SettingsComponent, InventoryComponent, DesiredEffectsComponent, PotionSelectorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements AfterViewInit {
-  title = 'potioncraft';
-  faFlask = faFlask;
+  public title: string = 'Potions Master';
+  public faFlask: IconDefinition = faFlask;
 
-  items = ['Settings', 'Inventory', 'Desired Effects', 'Potions'];
-  selectedItem = 'Inventory';
-
+  public accordionItems: string[] = ['Settings', 'Inventory', 'Desired Effects', 'Potions'];
+  
   constructor(public potionService: PotionService) { }
 
   ngOnInit(): void {
@@ -37,4 +38,5 @@ export class AppComponent implements AfterViewInit {
     }), 0;
    
   }
+
 }
