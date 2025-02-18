@@ -1,20 +1,29 @@
+<div class="button-header">
+  <button class="button-medium" (click)="addAll()">Add All</button>
+  &nbsp;
+  <button class="button-medium" (click)="removeAll()">Remove All</button>
+  &nbsp;
+  <button class="button-medium" (click)="save()">Save</button>
+</div>
 <div>
     <ul class="list-unstyled card-columns">
-@for (inventoryItem of potionService.currentInventory; track inventoryItem.ingredientName) {
-    <li class="inventory-item">
+    @for (inventoryItem of potionService.currentInventory; track inventoryItem.ingredientName) {
+      <li class="inventory-item">
         <div class="form-group" style="vertical-align: top;">
-            <span class="plus-span">
-                <button class="light-button increment-button" (click)="addItem(inventoryItem.ingredientName)">+</button>
-            </span>
-            <span class="quantity-span">
-                <input class="quantity-input" inputmode="numeric" [(ngModel)]="inventoryItem.quantity" />
-            </span>
-            <span class="minus-span">
-                <button class="light-button increment-button"
-                (click)="subtractItem(inventoryItem.ingredientName)">-</button>
-            </span>
-            <span class="name-span">{{inventoryItem.ingredientName}}</span>
+          <span class="plus-span">
+            <button class="button-light increment-button" (click)="addItem(inventoryItem.ingredientName)">+</button>
+          </span>
+          <span class="quantity-span">
+            <input class="quantity-input input-light" inputmode="numeric" [(ngModel)]="inventoryItem.quantity"
+              onfocus="this.select()" />
+          </span>
+          <span class="minus-span">
+            <button class="button-light increment-button"
+              (click)="subtractItem(inventoryItem.ingredientName)">-</button>
+          </span>
+          <span class="name-span">{{inventoryItem.ingredientName}}</span>
         </div>
-    </li>
-}
-
+      </li>
+    }
+  </ul>
+</div>

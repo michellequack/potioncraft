@@ -1,0 +1,74 @@
+.potion-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cost {
+  margin-left: 15px;
+}
+
+.section-label {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #7D8EB1;
+  font-size: 14px;
+}
+
+.ingredient-item {
+  font-size: 13px;
+}
+
+.ingredient-row {
+  max-width: 400px !important;
+}
+
+.description-row {
+  font-size: 13px;
+  margin-left: 18px;
+  font-style: italic;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+.ingredient-icon {
+  display: inline-block;
+}
+
+.ingredient-group {
+  display: inline-block;
+}
+
+.list-group-item {
+  border: none !important;
+  padding: 5px !important;
+}
+
+.quantity-input {
+  width: 35px;
+  height: 18px;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.crafting-label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.button-dark {
+  height: 18px;
+  font-size: 11px;
+  padding: 0px;
+}
+
+.crafting-row {
+  margin-top: 4px;
+}
+
+.section-header {
+  font-size: 14px;
+}

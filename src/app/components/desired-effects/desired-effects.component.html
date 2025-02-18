@@ -1,0 +1,20 @@
+<div class="button-header">
+  <button class="button-medium" (click)="addAll()">Add All</button>
+  &nbsp;
+  <button class="button-medium" (click)="removeAll()">Remove All</button>
+  &nbsp;
+  <button class="button-medium" (click)="saveEffects()">Save</button>
+</div>
+<div>
+  <ul class="list-unstyled card-columns">
+  @for (effect of potionService.currentEffects; track effect.name) {
+    <li>
+      <div class="effect-item">
+        <mat-checkbox [(ngModel)]="effect.isSelected" >
+        </mat-checkbox>
+        <span class="setting-label">{{effect.name}}</span>
+      </div>
+    </li>
+  }
+  </ul>
+</div>

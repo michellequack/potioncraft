@@ -1,22 +1,12 @@
-@if (potionService.isLoading) {
-  <div class="myspinner">
-    <div class="myspinner-inner">
-      <div class="spinner-border" role="status"></div>
-      <div class="mixing-potions">Mixing Potions...</div>
-    </div>
-  </div>
-}
-
-
 <div class="page-header">
   <span class="page-icon"><fa-icon [icon]="faFlask"></fa-icon></span>
   <span class="page-title">Potions Master</span>
 </div>
 
-@if (!potionService.isLoading) {
 <div class="container">
   <div ngbAccordion [closeOthers]="true">
-    <div ngbAccordionItem [collapsed]="selectedItem !== 'Settings'">
+    <div ngbAccordionItem [collapsed]="this.potionService.selectedAccordionItem !== 'Settings'"
+        (click)="this.potionService.accordionItemSelected('Settings')">
       <h2 ngbAccordionHeader>
         <button ngbAccordionButton>Settings</button>
       </h2>
@@ -29,7 +19,22 @@
       </div>
     </div>
 
-    <div ngbAccordionItem [collapsed]="selectedItem !== 'Inventory'">
+    <div ngbAccordionItem [collapsed]="this.potionService.selectedAccordionItem !== 'Desired Effects'"
+        (click)="this.potionService.accordionItemSelected('Desired Effects')">
+      <h2 ngbAccordionHeader>
+        <button ngbAccordionButton>Desired Effects</button>
+      </h2>
+      <div ngbAccordionCollapse>
+        <div ngbAccordionBody>
+          <ng-template>
+            <app-desired-effects></app-desired-effects>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+
+    <div ngbAccordionItem [collapsed]="this.potionService.selectedAccordionItem !== 'Inventory'"
+        (click)="this.potionService.accordionItemSelected('Inventory')">
       <h2 ngbAccordionHeader>
         <button ngbAccordionButton>Inventory</button>
       </h2>
@@ -42,27 +47,15 @@
       </div>
     </div>
 
-    <div ngbAccordionItem [collapsed]="selectedItem !== 'Desired Effects'">
-      <h2 ngbAccordionHeader>
-        <button ngbAccordionButton>Desired Effects</button>
-      </h2>
-      <div ngbAccordionCollapse>
-        <div ngbAccordionBody>
-          <ng-template>
-            These are some desired effects
-          </ng-template>
-        </div>
-      </div>
-    </div>
-
-    <div ngbAccordionItem [collapsed]="selectedItem !== 'Potions'">
+    <div ngbAccordionItem [collapsed]="this.potionService.selectedAccordionItem !== 'Potions'" 
+        (click)="this.potionService.accordionItemSelected('Potions')">
       <h2 ngbAccordionHeader>
         <button ngbAccordionButton>Potions</button>
       </h2>
       <div ngbAccordionCollapse>
         <div ngbAccordionBody>
           <ng-template>
-            These are some potions
+            <app-potion-selector></app-potion-selector>
           </ng-template>
         </div>
       </div>
@@ -70,4 +63,3 @@
 
   </div>
 </div>  
-}

@@ -16,4 +16,6 @@ export class Potion {
     saints: boolean = false;
     potionEffects: PotionEffect[] = [];
     potionType: PotionType = PotionType.Potion;
+    numAvailable: number = 0;
+    numCrafted: number = 1;
 }
