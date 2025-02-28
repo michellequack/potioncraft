@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PotionService } from './services/potion.service';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -14,7 +14,7 @@ import { PotionSelectorComponent } from "./components/potion-selector/potion-sel
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent  {
   public title: string = 'Potions Master';
   public faFlask: IconDefinition = faFlask;
 
@@ -25,18 +25,12 @@ export class AppComponent implements AfterViewInit {
   ngOnInit(): void {
     this.potionService.getJsonData()
     .subscribe(([effects, ingredients, potions]) => {
-      // this.potionService.isLoading = true;
+      this.potionService.isLoading = true;
       this.potionService.calculateInitialPotionInfo(effects, ingredients, potions).subscribe((returnStr) => {
+        this.potionService.isLoading = false;
       });
       
     });
-  }
-
-  ngAfterViewInit(): void {
-    setTimeout(() => {
-      this.potionService.isLoading = false;
-    }), 0;
-   
   }
 
 }

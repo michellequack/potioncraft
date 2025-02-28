@@ -12,6 +12,7 @@ import { IngredientEffect } from '../entities/ingredientEffect';
 import { isPlatformBrowser } from '@angular/common';
 import { InventoryItem } from '../entities/inventoryItem';
 import { EffectItem } from '../entities/effectItem';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -31,8 +32,8 @@ export class PotionService {
   public currentPotionsPage: Potion[] = [];
   public numPotionsToShow: number = 20;
 
-  public selectedAccordionItem: string = 'Inventory';
-  public lastSelectedAccordianItem = 'Inventory';
+  public selectedAccordionItem: string = 'Settings';
+  public lastSelectedAccordianItem = 'Settings';
 
   public isLoading = true;
 
@@ -44,9 +45,11 @@ export class PotionService {
   getJsonData(): Observable<[Effect[], Ingredient[], Potion[]]>
   {
     const loadStartTime = Date.now();
-    const $effects = this.http.get<Effect[]>('effectData.json');
-    const $ingredients = this.http.get<Ingredient[]>('ingredientData.json');
-    const $potions = this.http.get<Potion[]>('potionData.json');
+
+
+    const $effects = this.http.get<Effect[]>(`effectData.json`);
+    const $ingredients = this.http.get<Ingredient[]>(`ingredientData.json`);
+    const $potions = this.http.get<Potion[]>(`potionData.json`);
 
     return forkJoin([$effects, $ingredients, $potions]);
   }
@@ -58,7 +61,9 @@ export class PotionService {
 
     if (this.lastSelectedAccordianItem === 'Settings') {
         this.saveAlchemySettingsToLocalStorage();
+        this.isLoading = true;
         this.mixPotions();
+        this.isLoading = false;
     }
     else if (this.lastSelectedAccordianItem === 'Desired Effects') {
       this.saveCurrentEffectsToLocalStorage();
@@ -109,7 +114,6 @@ export class PotionService {
     this.mixPotions();
     this.getCurrentEffectsFromLocalStorage();
     this.getCurrentInventoryFromLocalStorage();
-    this.selectPotions();
     return of ("Done");
   }
 
@@ -432,11 +436,11 @@ export class PotionService {
     this.currentPotionsPage = this.currentPotions.slice(0, this.numPotionsToShow + 1);
   }
 
-  subtractIngredients(potion: Potion) {
+  subtractIngredients(potion: Potion): string {
+    let returnString = '';
     if (potion.numCrafted > potion.numAvailable) {
       //TODO: change this to a nice toast instead of an ugly alert.
-      alert("Nope, that's too many.");
-      return;
+      return "Nope, that's too many.";
     }
     let inventoryArray: InventoryItem[] = [];
 
@@ -450,6 +454,8 @@ export class PotionService {
     });
 
     this.selectPotions();
+
+    return '';
   }
 
   getCurrentEffectsFromLocalStorage(): void {
@@ -523,7 +529,6 @@ export class PotionService {
   }  
 
   getAlchemySettingsFromLocalStorage(): void {
-    if (isPlatformBrowser(this.platformId)) {
       this.alchemySettings.alchemySkillLevel = this.getNumberFromLocalStorage("alchemySkillLevel", 15);
       this.alchemySettings.alchemistPerkRank = this.getNumberFromLocalStorage("alchemistPerkRank", 0);
       this.alchemySettings.fortifyAlchemyPercent = this.getNumberFromLocalStorage("fortifyAlchemyPercent", 0);
@@ -540,7 +545,6 @@ export class PotionService {
       this.alchemySettings.useDragonborn = this.getBooleanFromLocalStorage("useDragonborn", true);
       this.alchemySettings.useQuest = this.getBooleanFromLocalStorage("useQuest", true);
       this.alchemySettings.useSaintsAndSeducers = this.getBooleanFromLocalStorage("useSaintsAndSeducers", true);
-    }
   }
 
   saveAlchemySettingsToLocalStorage(): void {
@@ -566,12 +570,12 @@ export class PotionService {
 
   getNumberFromLocalStorage(key: string, defaultValue: number): number {
     const value = localStorage.getItem(key);
-    return value === undefined ? defaultValue : Number(value);
+    return value === null ? defaultValue : Number(value);
   }
 
   getBooleanFromLocalStorage(key: string, defaultValue: boolean): boolean {
     const value = localStorage.getItem(key);
-    var finalValue = false;
+    var finalValue = defaultValue;
     if (value === "true")
     {
       finalValue = true;

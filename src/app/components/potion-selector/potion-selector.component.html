@@ -1,40 +1,46 @@
-
-<div class="section-header">
-  Showing {{potionService.numPotionsToShow}} of {{potionService.currentPotions.length}} potions
-</div>
-<div><hr /></div>
-@for (potion of potionService.currentPotionsPage; track potion.id) {
-  <div>
-    <div class="title-row">
-      <span class="potion-name">{{potion.name}}</span>
-      <span class="cost"><fa-icon [icon]="faSackDollar"></fa-icon> {{potion.cost}}</span>
-    </div>
-    <div class="ingredient-row">
-      <span class="ingredient-icon"><fa-icon [icon]="faLeaf"></fa-icon></span>
-      <span class="ingredient-group">
-        <ul class="list-group list-group-horizontal ingredient-list">
-          @for (ingredient of potion.ingredients; track ingredient) {
-            <li class="list-group-item ingredient-item">{{ingredient}}</li>
-          }
-        </ul>
-      </span>
-    </div>
-    <div class="description-row">
-      @for (effect of potion.potionEffects; track effect.name) {
-        <div class="effect-row">{{getEffectDescription(effect)}}</div>
-      }
-    </div>
-    <div class="crafting-row">
-      <span class="crafting-label"># possible: {{potion.numAvailable}}</span>
-      <span><input class="quantity-input input-light" inputmode="numeric" [(ngModel)]="potion.numCrafted"
-        onfocus="this.select()" />
-      <button class="button-dark" (click)="potionService.subtractIngredients(potion)">Crafted</button></span>
-    </div>
+@if (potionService.currentPotions.length <= 0) {
+  <div class="section-header">No Potions to Show</div>
+  <div>Please add items to your inventory, select more desired effects, or give us a DLC to work with.</div>
+}
+@else {
+  <div class="section-header">
+    Showing {{potionService.numPotionsToShow | number:'1.0-0'}} of {{potionService.currentPotions.length | number:'1.0-0'}} potions
   </div>
   <div><hr /></div>
-}
-@if (this.potionService.currentPotions.length > this.potionService.numPotionsToShow) {
-  <div>
-    <button class="button-medium" (click)="this.potionService.showMorePotions()">Show More</button>
-  </div>
+  @for (potion of potionService.currentPotionsPage; track potion.id) {
+    <div>
+      <div class="title-row">
+        <span class="potion-name">{{potion.name}}</span>
+        <span class="cost"><fa-icon [icon]="faSackDollar"></fa-icon> {{potion.cost}}</span>
+      </div>
+      <div class="ingredient-row">
+        <span class="ingredient-icon"><fa-icon [icon]="faLeaf"></fa-icon></span>
+        <span class="ingredient-group">
+          <ul class="list-group list-group-horizontal ingredient-list">
+            @for (ingredient of potion.ingredients; track ingredient) {
+              <li class="list-group-item ingredient-item">{{ingredient}}</li>
+            }
+          </ul>
+        </span>
+      </div>
+      <div class="description-row">
+        @for (effect of potion.potionEffects; track effect.name) {
+          <div class="effect-row">{{getEffectDescription(effect)}}</div>
+        }
+      </div>
+      <div class="crafting-row">
+        <span class="crafting-label"># possible: {{potion.numAvailable}}</span>
+        <span><input class="quantity-input input-light" inputmode="numeric" [(ngModel)]="potion.numCrafted"
+          onfocus="this.select()" />
+        <button class="button-dark" 
+          (click)="craftAPotion(potion)" title="Will subtract these ingredients from your inventory.">Crafted</button></span>
+      </div>
+    </div>
+    <div><hr /></div>
+  }
+  @if (this.potionService.currentPotions.length > this.potionService.numPotionsToShow) {
+    <div class="text-center">
+      <button class="button-medium" (click)="this.potionService.showMorePotions()">Show More</button>
+    </div>
+  }
 }

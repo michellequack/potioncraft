@@ -6,3 +6,35 @@
 .button-row {
   margin-bottom: 10px;
 }
+
+.slider-control {
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+}
+
+.slider-container {
+  height: 30px;
+}
+
+.dlc-header {
+  @media screen and (max-width: 991px) {
+    margin-top: 10px;
+  } 
+}
+
+.plus-span {
+  @media screen and (min-width: 576px) {
+    display: none;
+  }
+}
+
+.minus-span {
+  @media screen and (min-width: 576px) {
+    display: none;
+  }
+}
+
+.spacer {
+  height: 8px;
+}
