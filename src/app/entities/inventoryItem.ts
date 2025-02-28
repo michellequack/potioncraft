@@ -1,4 +1,4 @@
 export class InventoryItem {
     ingredientName: string = '';
-    quantity: number = 0;
+    quantity: number = 1;
 }

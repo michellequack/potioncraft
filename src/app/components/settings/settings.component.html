@@ -1,34 +1,69 @@
-
-<div class="button-row">
-  <button class="button-medium" (click)="mixPotions()">Save</button>
-</div>
-
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-lg-6">
     <div class="section-header">
       Alchemist's Settings
     </div>
-    <div>
+    <div class="slider-container">
         <span class="setting-label">Alchemy Skill Level</span>
-        <mat-slider class="my-slider" min="0" max="100" step="1" showTickMarks >
+        <mat-slider class="my-slider slider-control" min="0" max="100" step="1" showTickMarks >
             <input matSliderThumb [(ngModel)]="potionService.alchemySettings.alchemySkillLevel">
-          </mat-slider>
-        {{potionService.alchemySettings.alchemySkillLevel}}
+        </mat-slider>
+        <span class="plus-span">
+          <button class="button-light increment-button" 
+            (click)="increaseItem('alchemySkillLevel', potionService.alchemySettings.alchemySkillLevel)">+</button>
+        </span>
+        <span class="quantity-span">
+          <input class="quantity-input input-light" inputmode="numeric" 
+            [(ngModel)]="potionService.alchemySettings.alchemySkillLevel"
+            (change)="validateAlchemySkillLevel($event, potionService.alchemySettings.alchemySkillLevel)"
+            onfocus="this.select()" />
+        </span>
+        <span class="minus-span">
+          <button class="button-light increment-button"
+            (click)="decreaseItem('alchemySkillLevel', potionService.alchemySettings.alchemySkillLevel)">-</button>
+        </span>
     </div>
-    <div>
+    <div class="slider-container">
         <span class="setting-label">Alchemist Perk Rank</span>
-        <mat-slider class="my-slider" min="0" max="5" step="1" showTickMarks >
+        <mat-slider class="my-slider slider-control" min="0" max="5" step="1" showTickMarks >
             <input matSliderThumb [(ngModel)]="potionService.alchemySettings.alchemistPerkRank">
           </mat-slider>
-        {{potionService.alchemySettings.alchemistPerkRank}}
+          <span class="plus-span">
+            <button class="button-light increment-button" 
+              (click)="increaseItem('alchemistPerkRank', potionService.alchemySettings.alchemistPerkRank)">+</button>
+          </span>
+          <span class="quantity-span">
+            <input class="quantity-input input-light" inputmode="numeric" 
+            (change)="validateAlchemistPerkRank($event,potionService.alchemySettings.alchemistPerkRank)"
+              [(ngModel)]="potionService.alchemySettings.alchemistPerkRank"
+              onfocus="this.select()" />
+          </span>
+          <span class="minus-span">
+            <button class="button-light increment-button"
+              (click)="decreaseItem('alchemistPerkRank', potionService.alchemySettings.alchemistPerkRank)">-</button>
+          </span>
     </div>
-    <div>
-      <span class="setting-label">Fortify Alchemy Level</span>
-      <mat-slider class="my-slider" min="0" max="100" step="1" showTickMarks >
+    <div class="slider-container">
+      <span class="setting-label">Fortify Alchemy %</span>
+      <mat-slider class="my-slider  slider-control" min="0" max="100" step="1" showTickMarks >
           <input matSliderThumb [(ngModel)]="potionService.alchemySettings.fortifyAlchemyPercent">
         </mat-slider>
-      {{potionService.alchemySettings.fortifyAlchemyPercent}}
+        <span class="plus-span">
+          <button class="button-light increment-button" 
+            (click)="increaseItem('fortifyAlchemyPercent', potionService.alchemySettings.fortifyAlchemyPercent)">+</button>
+        </span>
+        <span class="quantity-span">
+          <input class="quantity-input input-light" inputmode="numeric" 
+            [(ngModel)]="potionService.alchemySettings.fortifyAlchemyPercent"
+            (change)="validateFortifyAlchemyPercent($event,potionService.alchemySettings.fortifyAlchemyPercent)"
+            onfocus="this.select()" />
+        </span>
+        <span class="minus-span">
+          <button class="button-light increment-button"
+            (click)="decreaseItem('fortifyAlchemyPercent', potionService.alchemySettings.fortifyAlchemyPercent)">-</button>
+        </span>
     </div>
+    <div class="spacer"></div>
     <div>
         <span class="setting-label">Physician Perk</span>
         <mat-checkbox [(ngModel)]="potionService.alchemySettings.hasPhysicianPerk">
@@ -56,7 +91,7 @@
     </div>
   </div>
  
-  <div class="col-md-6">
+  <div class="col-lg-6 dlc-header">
     <div class="section-header header-might-collapse">
       DLC's to Include
     </div>

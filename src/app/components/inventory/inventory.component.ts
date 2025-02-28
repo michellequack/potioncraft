@@ -1,17 +1,23 @@
 import { Component, inject } from '@angular/core';
 import { PotionService } from '../../services/potion.service';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { InventoryItem } from '../../entities/inventoryItem';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faPlus, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-inventory',
-  imports: [FormsModule],
+  imports: [FormsModule, FontAwesomeModule],
   templateUrl: './inventory.component.html',
   styleUrl: './inventory.component.scss'
 })
 export class InventoryComponent {
   private _snackBar = inject(MatSnackBar);
+
+  public faPlus: IconDefinition = faPlus;
+  public faTrashCan: IconDefinition = faTrashCan;
 
   constructor(public potionService: PotionService) { }
 
