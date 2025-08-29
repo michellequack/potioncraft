@@ -29,6 +29,8 @@ export class PotionService {
   public currentEffects: EffectItem[] = [];
   public currentPotions: Potion[] = [];
 
+  public debugPotion: string = '';
+
   public currentPotionsPage: Potion[] = [];
   public numPotionsToShow: number = 20;
 
@@ -124,7 +126,7 @@ export class PotionService {
 
       this.potionData.forEach((potion: Potion) => {
 
-        if (potion.id === 'Bleeding Crown---Honeycomb---Tundra Cotton') {
+        if (potion.id === 'Green Butterfly Wing---Imp Stool---Rot Scale') {
           var s = 'stop';
         }
 
@@ -145,15 +147,24 @@ export class PotionService {
 
           const effectInfo = maxIngredient.effectInfo.filter(e => e.name === effectName)[0];
           const magnitude = this.getEffectMagnitude(effectInfo, effect!, potionEffect.calculatedPower);
-          const duration = this.getEffectDuration(effectInfo, effect!, potionEffect.calculatedPower);
+          let duration = this.getEffectDuration(effectInfo, effect!, potionEffect.calculatedPower);
+
+          if (effect?.name === 'Slow') {
+            // possible that this is true for "effectType": "magnitude"
+            duration = magnitude - 1;
+          }
 
           potionEffect.magnitude = magnitude;
           potionEffect.duration = duration;
 
-          const goldCost = 
+          let magnitudeFactor = Math.max(Math.pow(magnitude, 1.1), 1);
+          let durationFactor = Math.max(Math.pow((duration / 10), 1.1), 1);
+
+          let goldCost = 
             effect!.baseCost *
-            Math.max(Math.pow(magnitude, 1.1), 1) *
-            Math.max(Math.pow((duration / 10), 1.1), 1);
+            magnitudeFactor *
+            durationFactor
+             ;
 
           potionEffect.goldCost = goldCost;
 
@@ -164,7 +175,7 @@ export class PotionService {
           potion.potionEffects.push(potionEffect);
         });
 
-        potion.potionEffects = potion.potionEffects.sort((a, b) => a.magnitude - b.magnitude);
+        potion.potionEffects = potion.potionEffects.sort((a, b) => b.goldCost - a.goldCost);
 
         const maxEffect = potion.potionEffects.reduce((max, item) => {
           return item.goldCost > max.goldCost ? item : max;
@@ -185,6 +196,12 @@ export class PotionService {
 
         potion.cost = Math.floor(potion.cost);
         potion.numCrafted = 1;
+
+        if (potion.id === 'Imp Stool---River Betty---Rot Scale') {
+          var s = 'stop';
+
+          this.debugPotion = JSON.stringify(potion,null,'\n');
+        }
 
       });
 
