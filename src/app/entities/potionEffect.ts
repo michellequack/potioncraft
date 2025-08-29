@@ -9,5 +9,6 @@ export class PotionEffect {
     duration: number = 0;
     effectType!: EffectType;
     calculatedPower: number = 0;
+    internalCost: number = 0;
 }
 
