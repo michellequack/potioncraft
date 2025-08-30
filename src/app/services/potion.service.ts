@@ -75,7 +75,7 @@ export class PotionService {
     }
 
     if (selectedItem === 'Potions') {
-      this.selectPotions();
+      this.mixPotions();
     }
 
     this.lastSelectedAccordianItem = selectedItem;
@@ -113,9 +113,12 @@ export class PotionService {
     });
 
     this.potionData = potions;
-    this.mixPotions();
+    this.findCurrentIngredients();
+
     this.getCurrentEffectsFromLocalStorage();
     this.getCurrentInventoryFromLocalStorage();
+    this.mixPotions();
+    
     return of ("Done");
   }
 
@@ -124,7 +127,9 @@ export class PotionService {
     try {
       const alchemistPerk = this.getAlchemistPerk();
 
-      this.potionData.forEach((potion: Potion) => {
+      this.selectPotions();
+
+      this.currentPotions.forEach((potion: Potion) => {
 
         if (potion.id === 'Green Butterfly Wing---Imp Stool---Rot Scale') {
           var s = 'stop';
